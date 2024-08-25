@@ -1,0 +1,55 @@
+.footerContainer{
+    background-color: black;
+    display: flex;
+  }
+  
+  .footerLogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5vw 0;
+  }
+  
+  .footerItems{
+    display: flex;
+    flex-grow: 1; 
+    flex-basis: 0;
+    align-items: center;
+  }
+  
+  .footerRoutes{
+    color: white;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+  }
+  
+  .footerListItem{
+    margin-bottom: 5px;
+    }
+  
+  .footerListLine{
+    margin-bottom: 5px;
+    color: white;
+    background-color: white;
+    height: 1px;
+  }
+
+  .footerLinks{
+    justify-content: space-between;
+
+  }
+  
+  .footerSocialMedia{
+    display: flex;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+    margin-bottom: 30px;
+  }
+  
+ 
+  .footerTxtFirma{
+    color: white;
+    margin-right: 1vw;
+  }

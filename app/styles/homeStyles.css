@@ -1,0 +1,112 @@
+
+/* background video */
+
+.videoContainer{
+    width: 100%;
+    display: flex;
+  }
+
+  .videoContainer video{
+    width: -webkit-fill-available;
+    filter:brightness(80%)
+  }
+/* Pictures Home */
+
+.homePictureContainer {
+    display: flex;
+    flex-direction: row;    
+}
+
+.textPictureHome, .pictureHome{
+    display: flex;
+}
+
+.marqueeContainer{
+    color: white;
+    background-color: #232021
+}
+.textMarquee{
+    margin: 10px 50px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+/* seccion central con fotos y descripciones. Dispay grid */
+
+.estudios, .servicios{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.homeImgBali{
+    position: relative !important;
+}
+
+.baliEstudioText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txtContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.baliLogoWhiteContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.baliLogoCenter{
+    background-color: black;
+    position: relative !important;
+    width: clamp(7rem, 35vw, 30rem) !important;
+    height: auto !important;
+}
+
+.extraTitleContainer{
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.dobleTxtBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.selected{
+    color: gray;
+}
+
+.faqContainer{
+    display: grid;
+    grid-template-columns:  50% 50%;
+    
+}
+
+.questions, .answers{
+    padding: 7vw 3vw;
+}
+
+.answers{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.answerTxt{
+    color: white;
+    font-size: clamp( 1rem, 1.2vw , 1.5rem);
+    line-height: 1.5rem;
+}
