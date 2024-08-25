@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="footerListLine"></div>
         </ul>
         <div className="footerSocialMedia footerText">
-          <p className="footerTxtFirma">Página diseñada y desarrollada por <Image src={"/logoKranding.png"} alt="Kranding" width={78} height={12} className="logoKranding"/></p>
+          <p className="footerTxtFirma">Página diseñada y desarrollada por <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1724556043/logoKranding_rtw9bz.png"} alt="Kranding" width={78} height={12} className="logoKranding"/></p>
             </div>
       </div>
     </div>

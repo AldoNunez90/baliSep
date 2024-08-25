@@ -27,7 +27,7 @@ export default function Navbar() {
       <div className="navBarContainer">
         <Link onClick={() => handleSelect("home")} href={"/"}>
           <Image
-            src="/baliLogo.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556041/logoBali_omq5tg.png"
             alt="logo Bali"
             width={150}
             height={42.5}
@@ -77,7 +77,7 @@ export default function Navbar() {
       <div className="socialNav">
         <a href="https://www.instagram.com/baliestudio/" target="_blank">
           <Image
-            src="/instagram_icon.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556036/iconIg_engeea.png"
             alt="instagram"
             width={30}
             height={30}
@@ -89,7 +89,7 @@ export default function Navbar() {
           target="_blank"
         >
           <Image
-            src="/whatsapp_icon.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556040/iconWp_odyt3u.png"
             alt="wp"
             width={30}
             height={30}
@@ -101,7 +101,7 @@ export default function Navbar() {
           target="_blank"
         >
           <Image
-            src="/linkln_icon.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556038/iconIn_me1iki.png"
             alt="linkedin"
             width={30}
             height={30}
