@@ -1,7 +1,7 @@
 .mouseGifContainer{
     position: fixed;
     left: 50%;
-    bottom: 40px; /* Ajusta este valor según sea necesario */
+    top: clamp(25rem, 47vw, 47rem );
     transform: translateX(-50%);
     transition: opacity 0.1s ease;
   }

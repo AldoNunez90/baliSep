@@ -1,0 +1,112 @@
+.conoceBaliContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conoceBaliImgContainer {
+    width: 50vw;
+  }
+
+  .conoceParagraph{
+    padding: 4vw 0;
+  }
+
+  .imgConoceBali {
+    display: flex;
+    justify-self: center;
+    position: relative !important;
+  } 
+  /* img con background */
+  .textConoceBali {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .imgConoceBali {
+    display: flex;
+    justify-self: center;
+    position: relative !important;
+  }
+  
+     
+  .studio2Container {
+    margin: 7vw 5vw;
+  }
+  
+  .ademasContainer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    margin-top: 2vw;
+  }
+  
+  .conocePhotosContainer {
+    width: -webkit-fill-available;
+  }
+  
+  .video-background {
+    width: 100%;
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+  }
+  
+  #background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que el video cubra toda la pantalla */
+    z-index: -1;
+    position: relative;
+  }
+  
+  .conocePhoto2Container {
+    align-items: center;
+    display: flex;
+  }
+  
+  .conocePhotoTxt {
+    margin-left: 1vw;
+  }
+  .conocePhoto2 {
+    display: block;
+    position: unset;
+    width: 20vw !important;
+    z-index: 1;
+    position: unset !important;
+  }
+  
+  .creditsPhoto {
+    color: white;
+  }
+  .overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 20vw;
+    opacity: 0;
+    transition: 0.5s ease;
+    color: white;
+    font-size: 0.8vw;
+    z-index: 2;
+    align-content: center;
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .imgContainerModel {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 20vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .imgContainerModel:hover .overlay {
+    opacity: 1;
+  }
+  
+  

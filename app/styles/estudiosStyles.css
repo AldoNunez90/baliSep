@@ -1,0 +1,61 @@
+.estudioImg{
+    display: block;
+}
+
+.switchBtnEstudios{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgContainer img{
+    position: inherit !important;
+}
+
+.setEstudioBtn {
+    border: none;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.handleClickSetEstudioContainer{
+    display: flex;
+}
+
+.cameraImg{
+    padding: 15px;
+}
+
+.setsContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.setPalaceImgLong{
+    position: relative !important;
+}
+
+.setPalaceContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.equiposDescriptions{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.equiposTxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+}

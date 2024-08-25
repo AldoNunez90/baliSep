@@ -12,7 +12,7 @@ export default function Estudio() {
     <div>
       <div className="imgContainer">
         <Image
-          src={"https://res.cloudinary.com/dsdzvhfhh/image/upload/t_estudiosPhoto/v1722747158/estudiosImg4_us5ieb.jpg"}
+          src={"https://res.cloudinary.com/dbohxop49/image/upload/v1724605349/estudioImg1_nqbt6z.jpg"}
           alt="Estudio"
           fill
           className="estudioImg"
@@ -28,11 +28,11 @@ export default function Estudio() {
               : { backgroundColor: "#232021", color: "white" }
           }
         >
-          <p className="switchBtnEstudios">SET</p>
+          <p className="switchBtnEstudios subTitle">SET</p>
         </div>
           <div className="miniCamSet">
           <Image
-              src={"/minicam.png"}
+              src={"https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"}
               alt="camera"
               className="cameraImg"
               width={30}

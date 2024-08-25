@@ -1,11 +1,14 @@
 import { Raleway } from "next/font/google";
-// import "./styles/conocebaliStyles.css"
+import "./styles/conoceStyles.css"
 // import "./styles/reservasStyles.css"
-// import "./styles/estudioStyles.css"
+import "./styles/contactoStyles.css"
+import "./styles/estudiosStyles.css"
 import "./styles/homeStyles.css"
 import "./styles/footerStyles.css"
 import "./styles/navbarStyles.css"
 import "./globals.css";
+import NavBar from "./components/Navbar";
+import Footer from "./components/Footer";
 // import "./styles/queries/queries599.css"
 // import "./styles/queries/queries600.css"
 // import "./styles/queries/queries769.css"
@@ -13,8 +16,7 @@ import "./globals.css";
 // import "./styles/queries/queries1024.css"
 // import "./styles/queries/queries1200.css"
 // import "./styles/queries/queries1441.css"
-import NavBar from "./components/Navbar";
-import Footer from "./components/Footer";
+
 
 
 

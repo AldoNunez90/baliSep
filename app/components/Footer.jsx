@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="footerLogo footerItems">
       <Link href={"/"}>
         <Image
-          src="/baliLogoWhite.png"
+          src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556042/logoBaliWhite_i64vv4.png"
           alt="logo"
           className="baliLogoCenter"
           width={503}
@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="socialNav socialFooter" style={{display: 'none'}}>
         <a href="https://www.instagram.com/baliestudio/" target="_blank">
           <Image
-            src="/instagram_icon.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556037/iconIgWhite_dzr0ne.png"
             alt="instagram"
             width={30}
             height={30}
@@ -30,7 +30,7 @@ export default function Footer() {
           target="_blank"
         >
           <Image
-            src="/whatsapp_icon.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556040/iconWpWhite_izlidr.png"
             alt="wp"
             width={30}
             height={30}
@@ -42,7 +42,7 @@ export default function Footer() {
           target="_blank"
         >
           <Image
-            src="/linkln_icon.png"
+            src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556039/iconInWhite_uwuctw.png"
             alt="linkedin"
             width={30}
             height={30}

@@ -18,7 +18,7 @@ export default function Contacto() {
   });
 
   const refreshPage = ()=>{
-
+    document.body.classList.remove('no-scroll');
     window.location.reload()
   }
 
@@ -33,6 +33,7 @@ export default function Contacto() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitted(true);
+    document.body.classList.add('no-scroll');
     if (Object.values(formValues).every((value) => value.trim() !== "")) {
       setRequisition(false);
       setisSending(true)
@@ -86,7 +87,7 @@ export default function Contacto() {
       </div>
       </div>
       <div>
-      <button onClick={()=>refreshPage()} className="startBookingBtn">Genial! </button>
+      <button onClick={()=>refreshPage()} className="btnStyle">Genial! </button>
     </div></>)
     } else if (error) {
     return  (<><div className="successMessage">
@@ -97,18 +98,17 @@ export default function Contacto() {
     </div>
     </div>
     <div>
-    <button onClick={()=>refreshPage()} className="startBookingBtn">Volver </button>
+    <button onClick={()=>refreshPage()} className="btnStyle">Volver </button>
   </div></>)
     } 
   }
 
   return (
     <div className="contactContainer">
-      {/* misma intro que Reservas */}
-      <div className="reservasIntroContainer">
-        <p className="reservasIntroTitle">{`La familia\nBali Estudio\nte espera!`}</p>
-        <p className="reservasIntroTxt">{`La creatividad se encuentra en el encanto\nde Buenos Aires! En nuestros 110 metros\ncuadrados, fusionamos la elegancia del estilo\nfrancés con el minimalismo moderno, ofreciendo\n3 sets diferentes para que tus ideas cobren vida.`}</p>
-        <p className="contactTxtBold">{`Nos encantaría saber de vos :)`}</p>
+      <div className="contactoContainer">
+        <p className="subTitle paddingParagraph introPadding">{`La familia\nBali Estudio\nte espera!`}</p>
+        <p className="paragraph paddingParagraph">{`La creatividad se encuentra en el encanto\nde Buenos Aires! En nuestros 110 metros\ncuadrados, fusionamos la elegancia del estilo\nfrancés con el minimalismo moderno, ofreciendo\n3 sets diferentes para que tus ideas cobren vida.`}</p>
+        <p className="paragraph paddingParagraph"><b>Nos encantaría saber de vos :)</b></p>
       </div>
       <div className="formContact">
       {isOpen && <div className="overlayDialog"></div> }
