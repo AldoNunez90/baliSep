@@ -29,6 +29,8 @@
     
     .navBarLogo{
       margin: 0 30px;
+      width: 120px;
+      height: auto;
     }
     
     .navList {

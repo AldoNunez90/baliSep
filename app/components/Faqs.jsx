@@ -52,7 +52,7 @@ export default function Faqs() {
   }
 
   const Answer = ({ option }) => (
-    option === 0 ? <Image src={"/baliLogoWhite.png"} alt="logo Bali" width={503} height={142} className="baliLogoCenter" /> : <p className="answerTxt">{options.map((opt) => option === opt.id && opt.answer )}</p>
+    option === 0 ? <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1724556042/logoBaliWhite_i64vv4.png"} alt="logo Bali" width={503} height={142} className="baliLogoCenter" /> : <p className="answerTxt">{options.map((opt) => option === opt.id && opt.answer )}</p>
   );
 
 
