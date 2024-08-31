@@ -1,0 +1,48 @@
+
+
+.imgIntroProduccion{
+    height: auto !important;
+    position: relative !important;
+    display: block;
+    filter:brightness(70%)
+
+}
+
+.produccionTitle{
+    color: white;
+    width: 25vw;
+    position: absolute;
+    z-index: 100;
+    top: 35vh;
+    left: 4rem;
+}
+
+.carouselSection{
+    padding: 5rem;
+}
+
+.secondaryCarouselContainer{
+    margin-top: 5rem;
+}
+
+.loaderProduccion{
+    margin: auto;
+}
+
+.produccionClose{
+    position: relative !important;
+    width: 80vw !important;
+    height: auto !important;
+    margin: 5rem auto 8rem !important;
+    display: block;
+}
+
+/* Flechas carrusel */
+
+.swiper-button-prev, .swiper-button-next{
+    color: black !important;
+}
+
+.swiper-button-prev:hover, .swiper-button-next:hover{
+    color: white !important;
+}
