@@ -1,15 +1,25 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import MainCarousel from "../components/MainCarousel";
 import SecondaryCarousel from "../components/SecondaryCarousel";
 
 export default function Produccion() {
   const [selectedProduction, setSelectedProduction] = useState(null);
+  const secondaryCarouselRef = useRef(null);
 
   const handleImageClick = (index) => {
     setSelectedProduction(index);
+    
   };
+ 
+  useEffect(() => {
+    if (selectedProduction !== null && secondaryCarouselRef.current) {
+      secondaryCarouselRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [selectedProduction]);
+console.log(secondaryCarouselRef.current);
+
 
   const images = [
     "https://res.cloudinary.com/dbohxop49/image/upload/v1724803707/EDITORIAL-STEPHI02685_k6jntw.jpg", // Steph
@@ -157,7 +167,7 @@ export default function Produccion() {
         <div>
           <MainCarousel images={images} onImageClick={handleImageClick} />
           {selectedProduction !== null && (
-           <div className="secondaryCarouselContainer"> <SecondaryCarousel images={productionImages[selectedProduction]} /> </div>
+           <div className="secondaryCarouselContainer" ref={secondaryCarouselRef}> <SecondaryCarousel images={productionImages[selectedProduction]} /> </div>
           )}
         </div>
       </section>

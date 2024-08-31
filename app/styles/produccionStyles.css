@@ -40,9 +40,16 @@
 /* Flechas carrusel */
 
 .swiper-button-prev, .swiper-button-next{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0.5rem;
     color: black !important;
 }
 
-.swiper-button-prev:hover, .swiper-button-next:hover{
-    color: white !important;
+.swiper-button-prev:active, .swiper-button-next:active{
+    background-color: gray !important;
+}
+
+.imgMainCarousel:hover{
+    transform: scale(1.05);
 }

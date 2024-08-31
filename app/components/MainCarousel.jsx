@@ -7,7 +7,7 @@ import 'swiper/css/navigation'
 
 const MainCarousel = ({ images, onImageClick }) => {
   return (
-    <Swiper spaceBetween={10}
+    <Swiper spaceBetween={25}
     slidesPerView={1}
     loop={true}
     autoplay={{
@@ -20,10 +20,12 @@ const MainCarousel = ({ images, onImageClick }) => {
       768: { slidesPerView: 3 },
       1024: { slidesPerView: 4 },
     }}
+    onMouseEnter={(swiper) => swiper.autoplay.stop()} 
+    onMouseLeave={(swiper) => swiper.autoplay.start()} 
     modules={[Autoplay, Navigation]}>
       {images.map((image, index) => (
         <SwiperSlide key={index} onClick={() => onImageClick(index)}>
-          <img src={image} alt={`Image ${index + 1}`} style={{ width: '100%', height: 'auto', cursor: 'pointer' }} />
+          <img src={image} alt={`Image ${index + 1}`} style={{ width: '100%', height: 'auto', cursor: 'pointer' }} className='imgMainCarousel'/>
         </SwiperSlide>
       ))}
     </Swiper>
