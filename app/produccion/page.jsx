@@ -12,6 +12,10 @@ export default function Produccion() {
     setSelectedProduction(index);
     
   };
+
+  const handleCloseModal = () => {
+    setSelectedProduction(null);
+  };
  
   useEffect(() => {
     if (selectedProduction !== null && secondaryCarouselRef.current) {
@@ -26,8 +30,8 @@ console.log(secondaryCarouselRef.current);
     "https://res.cloudinary.com/dbohxop49/image/upload/v1724803718/_DSF3483_ez6fkz.jpg", //Aylen
     "https://res.cloudinary.com/dbohxop49/image/upload/v1724803721/_DSF2783_qkyt9k.jpg", //Bianca
     "https://res.cloudinary.com/dbohxop49/image/upload/v1724804483/DSC04676_uk7ggw.jpg", //Barbi
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724803710/2024_03_03_Baldo_Invierno_001_g4yvhi.jpg", //Nadege
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724804602/dsc09_bdm27t.jpg", //Law
+    "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.32.58_quiove.jpg", //Nadege
+    "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.33.38_kttccg.jpg", //Law
     "https://res.cloudinary.com/dbohxop49/image/upload/v1724804168/DSC04347_1FIORELLAPERATA_ywfnmq.jpg", //Fiorella
     "https://res.cloudinary.com/dbohxop49/image/upload/v1724803739/DSC04804_nxax5v.jpg", //Clara
   ];
@@ -153,7 +157,7 @@ console.log(secondaryCarouselRef.current);
   return (
     <div>
       <section>
-        <p className="title produccionTitle">{`EN BALI\nCADA\nPRODUCCION\nES MAGIA\nGRACIAS A VOS`}</p>
+        <p className="title produccionTitle">{`EN BALI\n`}<span className="subTitle">{`CADA\nPRODUCCION\nES MAGIA\nGRACIAS A VOS`}</span></p>
         <Image
           src={
             "https://res.cloudinary.com/dbohxop49/image/upload/v1725120464/produccionImgIntro_un9vpn.jpg"
@@ -167,7 +171,10 @@ console.log(secondaryCarouselRef.current);
         <div>
           <MainCarousel images={images} onImageClick={handleImageClick} />
           {selectedProduction !== null && (
-           <div className="secondaryCarouselContainer" ref={secondaryCarouselRef}> <SecondaryCarousel images={productionImages[selectedProduction]} /> </div>
+           <div className="modalOverlay" onClick={handleCloseModal} ref={secondaryCarouselRef}>
+            <div className="modalContent" onClick={(e) => e.stopPropagation()} ref={secondaryCarouselRef}>
+              <SecondaryCarousel images={productionImages[selectedProduction]} /> </div>
+              </div> 
           )}
         </div>
       </section>

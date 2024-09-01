@@ -20,8 +20,6 @@ const MainCarousel = ({ images, onImageClick }) => {
       768: { slidesPerView: 3 },
       1024: { slidesPerView: 4 },
     }}
-    onMouseEnter={(swiper) => swiper.autoplay.stop()} 
-    onMouseLeave={(swiper) => swiper.autoplay.start()} 
     modules={[Autoplay, Navigation]}>
       {images.map((image, index) => (
         <SwiperSlide key={index} onClick={() => onImageClick(index)}>
