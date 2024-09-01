@@ -1,11 +1,13 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation } from 'swiper/modules'; 
+import { useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/autoplay'; 
 import 'swiper/css/navigation'
 
 
 const MainCarousel = ({ images, onImageClick }) => {
+  
   return (
     <Swiper spaceBetween={25}
     slidesPerView={1}
@@ -13,6 +15,8 @@ const MainCarousel = ({ images, onImageClick }) => {
     autoplay={{
       delay: 3000,
       disableOnInteraction: true,
+      pauseOnMouseEnter: true,
+
     }}
     navigation={true}
     breakpoints={{
@@ -22,8 +26,18 @@ const MainCarousel = ({ images, onImageClick }) => {
     }}
     modules={[Autoplay, Navigation]}>
       {images.map((image, index) => (
-        <SwiperSlide key={index} onClick={() => onImageClick(index)}>
-          <img src={image} alt={`Image ${index + 1}`} style={{ width: '100%', height: 'auto', cursor: 'pointer' }} className='imgMainCarousel'/>
+        <SwiperSlide key={index}>
+          <img src={image.url} alt={`Image ${index + 1}`} style={{ width: '100%', height: 'auto', cursor: 'pointer' }} className='imgMainCarousel' onClick={() => onImageClick(index)}/>
+          <div className='creditsMainCarousel'>
+          {Object.entries(image.details).map(([key, value], idx) => (
+                <p key={idx}>
+                  <strong>{key}:</strong>{' '}
+                  <a href={value.link} target="_blank" rel="noopener noreferrer">
+                    {value.name}
+                  </a>
+                </p>
+              ))}
+          </div>
         </SwiperSlide>
       ))}
     </Swiper>

@@ -37,6 +37,10 @@
     display: block;
 }
 
+.creditsMainCarousel{
+    margin-top: 1rem;
+}
+
 /* Flechas carrusel */
 
 .swiper-button-prev, .swiper-button-next{

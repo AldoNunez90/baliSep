@@ -12,10 +12,6 @@ export default function Produccion() {
     setSelectedProduction(index);
     
   };
-
-  const handleCloseModal = () => {
-    setSelectedProduction(null);
-  };
  
   useEffect(() => {
     if (selectedProduction !== null && secondaryCarouselRef.current) {
@@ -26,14 +22,88 @@ console.log(secondaryCarouselRef.current);
 
 
   const images = [
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724803707/EDITORIAL-STEPHI02685_k6jntw.jpg", // Steph
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724803718/_DSF3483_ez6fkz.jpg", //Aylen
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724803721/_DSF2783_qkyt9k.jpg", //Bianca
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724804483/DSC04676_uk7ggw.jpg", //Barbi
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.32.58_quiove.jpg", //Nadege
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.33.38_kttccg.jpg", //Law
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724804168/DSC04347_1FIORELLAPERATA_ywfnmq.jpg", //Fiorella
-    "https://res.cloudinary.com/dbohxop49/image/upload/v1724803739/DSC04804_nxax5v.jpg", //Clara
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803707/EDITORIAL-STEPHI02685_k6jntw.jpg", // Steph, 
+      details: {
+        Ph: {name: "@gabrielbailoph", link: "https://www.instagram.com/gabrielbailoph"},
+        Modelo:  {name: "@stephiimontero", link: "https://www.instagram.com/stephiimontero"}, 
+        "Assist ph":  {name: "@agusmendozaph", link: "https://www.instagram.com/agusmendozaph"},
+        Back: {name: "@alejandrog.wall", link: "https://www.instagram.com/alejandrog.wall"},
+        Makeup: {name: "@martupaulik.mkp", link: "https://www.instagram.com/martupaulik.mkp"},
+        "Producción y diseño de vestuario": {name: "@movement.productora", link: "https://www.instagram.com/movement.productora"}
+      }
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803718/_DSF3483_ez6fkz.jpg", //Aylen 
+      details: {
+        Modelo: {name: "@aylencasini_", link: "https://www.instagram.com/aylencasini_"},
+        Ph: {name: "@ivanherrera.ph", link: "https://www.instagram.com/ivanherrera.ph"}
+      }
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803721/_DSF2783_qkyt9k.jpg", //Bianca, 
+      details: {
+        ph: {name: "@ivanherrera.ph", link: "https://www.instagram.com/ivanherrera.ph"},
+        "Assist ph": {name: "@photostudiopop", link: "https://www.instagram.com/photostudiopop"},
+        model: {name: "@bianca.micuda", link: "https://www.instagram.com/bianca.micuda"} ,
+        diseños: {name: "@santiagodesign__", link: "https://www.instagram.com/santiagodesign__"},
+        makeup: {name: "@natufermakeup", link: "https://www.instagram.com/natufermakeup"},
+      }
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724804483/DSC04676_uk7ggw.jpg", //Barbi, 
+      details: {
+        Modelo: {name: "@barbieeferrari", link: "https://www.instagram.com/barbieeferrari"}, 
+        Marca:  {name: "@bfstoreok", link: "https://www.instagram.com/bfstoreok"},
+        Pelo:  {name: "@emmabarrioshair", link: "https://www.instagram.com/emmabarrioshair"},
+        "Make up":  {name: "@soficosta.makeup", link: "https://www.instagram.com/soficosta.makeup"},
+        Fotografia:  {name: "@magenciamkt", link: "https://www.instagram.com/magenciamkt"},
+        Fotografia:  {name: "@marbellendier", link: "https://www.instagram.com/marbellendier"},
+        Fotografia:  {name: "@maratkinson_", link: "https://www.instagram.com/maratkinson_"},
+
+      }
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803710/2024_03_03_Baldo_Invierno_001_g4yvhi.jpg",
+      details: {
+        Marca: { name: '@baldo.arg', link: 'https://www.instagram.com/baldo.arg/' },
+        Modelo: { name: '@kibbelquesus', link: 'https://www.instagram.com/kibbelquesus/' },
+        Estilista: { name: '@sonialifcha', link: 'https://www.instagram.com/sonialifcha/' },
+        Fotografía: { name: '@gaillard.nadege', link: 'https://www.instagram.com/gaillard.nadege/' },  
+        },
+    }, //Nadege
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724804602/dsc09_bdm27t.jpg", //Law, 
+      details: {
+        Marca: {name: "@inlaw_ba", link: "https://www.instagram.com/inlaw_ba"},
+        Modelo: {name: "@fifubassan", link: "https://www.instagram.com/fifubassan"},
+        Modelo: {name: "@giuulianam", link: "https://www.instagram.com/giuulianam"},
+        Productora: {name: "@bykarycantillo", link: "https://www.instagram.com/bykarycantillo"},
+        Fotografía: {name: "@fiorellaperata", link: "https://www.instagram.com/fiorellaperata"}
+      }
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724804168/DSC04347_1FIORELLAPERATA_ywfnmq.jpg", //Fiorella, 
+      details: {
+        Modelo: {name: "@francescadcarolis", link: "https://www.instagram.com/francescadcarolis"},
+        Modelo: {name: "@melodygiselle", link: "https://www.instagram.com/melodygiselle"},
+        Modelo: {name: "@notmodelsmgmt", link: "https://www.instagram.com/notmodelsmgmt"},
+        PH: {name: "@fiorellaperata", link: "https://www.instagram.com/fiorellaperata"},
+        PH: {name: "@catalinaalmada", link: "https://www.instagram.com/catalinaalmada"},
+        PH: {name: "@mus_creativestudio", link: "https://www.instagram.com/mus_creativestudio"},
+        "Make up & hair": {name: "@flornittomakeup", link: "https://www.instagram.com/flornittomakeup"},
+        Gracias: {name: "@lovetoyei", link: "https://www.instagram.com/lovetoyei"},
+        Gracias: {name: "@breeders_furs", link: "https://www.instagram.com/breeders_furs"},
+        Gracias: {name: "@calcabsas", link: "https://www.instagram.com/calcabsas"},
+        Gracias: {name: "@casaqueando", link: "https://www.instagram.com/casaqueando"}
+      }
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803739/DSC04804_nxax5v.jpg", //Clara, 
+      details: {
+        Model: {name: "@claramkovacic", link: "https://www.instagram.com/claramkovacic"},
+        Photography: {name: "@noelpueblaphotography", link: "https://www.instagram.com/noelpueblaphotography"},
+        "Photography assistant": {name: "@mararosset", link: "https://www.instagram.com/mararosset"},
+        Styling: {name: "@bykarycantillo", link: "https://www.instagram.com/bykarycantillo"},
+        "Wardrobe credits": {name: "@marisolpalmie", link: "https://www.instagram.com/marisolpalmie"},
+        Hat: {name: "@dachics", link: "https://www.instagram.com/dachics"},
+        "Makeup & Hair": {name: "@marumeichtry", link: "https://www.instagram.com/marumeichtry"},
+        Filmmaker: {name: "@fiorellaperata", link: "https://www.instagram.com/fiorellaperata"},
+        "Location": {name: "@baliestudio", link: "https://www.instagram.com/baliestudio"}
+      }
+    }   
   ];
   const productionImages = {
     0: [
@@ -157,7 +227,7 @@ console.log(secondaryCarouselRef.current);
   return (
     <div>
       <section>
-        <p className="title produccionTitle">{`EN BALI\n`}<span className="subTitle">{`CADA\nPRODUCCION\nES MAGIA\nGRACIAS A VOS`}</span></p>
+        <p className="title produccionTitle">{`EN BALI\nCADA\nPRODUCCION\nES MAGIA\nGRACIAS A VOS`}</p>
         <Image
           src={
             "https://res.cloudinary.com/dbohxop49/image/upload/v1725120464/produccionImgIntro_un9vpn.jpg"
@@ -171,10 +241,7 @@ console.log(secondaryCarouselRef.current);
         <div>
           <MainCarousel images={images} onImageClick={handleImageClick} />
           {selectedProduction !== null && (
-           <div className="modalOverlay" onClick={handleCloseModal} ref={secondaryCarouselRef}>
-            <div className="modalContent" onClick={(e) => e.stopPropagation()} ref={secondaryCarouselRef}>
-              <SecondaryCarousel images={productionImages[selectedProduction]} /> </div>
-              </div> 
+           <div className="secondaryCarouselContainer" ref={secondaryCarouselRef}> <SecondaryCarousel images={productionImages[selectedProduction]} /> </div>
           )}
         </div>
       </section>
