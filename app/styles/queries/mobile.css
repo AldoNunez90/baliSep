@@ -1,0 +1,102 @@
+
+@media only screen and (max-width: 785px){
+
+    .homeMobile{
+        display: block;
+    }
+
+    .homeDesktop{
+        display: none;
+    }
+
+    .socialNav{
+        display: none;
+    }
+    
+    .navBarLogo{
+        width: 15vw;
+        height: auto;
+    }
+    
+    .navBarContainer{
+        width: unset;
+    }
+    
+    .navList {
+        flex-direction: column;
+        background-color: white;
+        padding: unset;
+        height: fit-content;
+        border-radius: 5px;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        visibility: hidden;
+        width: fit-content;
+        align-items: end;
+    }
+    
+    .visible {
+        visibility: visible;
+    }
+    
+    .nav-item {
+        margin-bottom: 2vw;
+        font-size: medium;
+        margin-right: 30px;
+    }
+    
+    .liNav {
+        margin-bottom: 2vw;
+    }
+    
+    .navBarLogo {
+        width: 20vw;
+        height: auto;
+    }
+    
+    .navBtnList {
+        display: block;
+        align-self: center;
+        transform: scale(1.5);
+        border: 1px solid;
+        border-radius: 2px;
+        position: absolute;
+        right: 30px;
+        width: fit-content;
+    }
+
+    .liNavMobile{
+        display: block !important;
+    }
+
+    .liNavDesktop{
+        display: none !important;
+    }
+
+    .footerLinks{
+        align-items: center;
+    }
+
+    .footerSocialMedia {
+        align-self: unset;
+    }
+
+    .footerItems{
+        flex-direction: column;
+    }
+
+    .footerText{
+        margin-left: 2vw;
+    }
+
+    .footerTxtFirma{
+        font-size: 6px;
+        margin-left: 2vw;
+    }
+    
+    .logoKranding{
+        height: 6px !important;
+        width: 39px !important;
+    }
+}

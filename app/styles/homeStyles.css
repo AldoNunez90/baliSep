@@ -1,4 +1,7 @@
 
+.homeMobile{
+    display: none;
+}
 /* background video */
 
 .videoContainer{
@@ -109,4 +112,47 @@
     color: white;
     font-size: clamp( 1rem, 1.2vw , 1.5rem);
     line-height: 1.5rem;
+}
+
+/* Mobile */
+
+.baliMobiletextHome{
+    position: absolute;
+    color: white;
+    left: 5%;
+}
+
+.imgMobileCarousel{
+    filter: brightness(60%);
+  }
+
+.imgHomeEspaciosMobile{
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+}
+
+.textEspaciosHomeMobileContainer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: white;
+}
+
+.titleMobile{
+    position: absolute;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.detailesHomeMobile{
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+
+.sectionTxtMobile{
+    padding: 1rem;
 }

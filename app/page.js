@@ -5,10 +5,78 @@ import MouseGif from "./components/MouseGif";
 import { Video } from "./components/Video";
 import Image from "next/image";
 import Link from "next/link";
+import MarqueeHomeMobile from "./components/MarqueeMobile";
+import MobileCarousel from "./components/MobileCarousel";
+
 
 export default function Home() {
+
+  const images= [
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725211083/homeMoble1_lbtuiq.jpg"},
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725211083/homeMobile2_hwfl3h.jpg"},
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725211082/homeMobile3_rg2n7i.jpg"}
+
+  ]
   return (
-    <div>
+    <>
+    <div className="homeMobile">
+      <div className="videoContainer">
+        <Video url="https://res.cloudinary.com/dbohxop49/video/upload/v1724556947/estudio_cw6x13_mymjol.mp4" />
+      </div>
+
+      <div className="marqueeContainer">
+        <MarqueeHomeMobile textMarquee={"ENFOCA.  CAPTURA.  INSPIRA"} />
+     </div>
+     <div style={{display: 'flex', alignItems: 'center'}}>
+     <div className="baliEstudioText baliMobiletextHome">
+       <div className="txtContainer">
+         <p className="title paddingParagraph">BALI ESTUDIO</p>
+         <p className="paragraph paddingParagraph">
+           {`Un Espacio sofisticado para proyectos\nextraordinarios.\n\nSu arquitectura europea confiere al\nespacio una atmósfera sofisticada,\nideal para clientes que buscan un\nentorno distinguido para sus\nproyectos.`}
+         </p>
+         <Link href={"/conocebali"}>
+           <div className="btnStyle paragraph paddingParagraph">Conoce más</div>
+         </Link>
+       </div>
+     </div>
+     <div style={{display: 'flex', width: '100%', backgroundColor: 'black', zIndex: '-1'}}>
+     <MobileCarousel images={images}/>
+     </div>
+     </div>
+     <div className="marqueeContainer">
+     <MarqueeHomeMobile textMarquee={"NUESTROS  SERVICIOS"}/>
+     </div>
+     <div style={{display: 'block'}}>
+      <div className="textEspaciosHomeMobileContainer">
+      <p className="titleMobile">{`EN NUESTROS\nESPACIOS\nPODRAS HACER`}</p>
+      </div>
+      <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725211082/homeMobile4_xjrcjq.jpg"} fill alt="Produccion Bali" className="imgHomeEspaciosMobile" style={{zIndex: '-1'}}/>
+     </div>
+     <div className="detailesHomeMobile">
+      <section className="sectionTxtMobile"> 
+        <p className="title">{`SESIONES\nFOTOGRAFICAS`}</p>
+        <p className="paragraph">{`PRODUCTO\nLOOKBOOK\nE COMMERCE\nEDITORIALES DE MODA\nCAMPAÑAS PUBLICITARIAS`}</p>
+      </section>
+      <section className="sectionTxtMobile"> 
+        <p className="title">{`EVENTOS`}</p>
+        <p className="paragraph">{`CASTING\nWORKSHOP\nSHOW ROOM\nFASHION SHOW\nMASTER CLASS\nEVENTOS EMPRESARIALES`}</p>
+      </section>
+      <section className="sectionTxtMobile"> 
+        <p className="title">{`PRODUCCIONES\nAUDIOVISUALES`}</p>
+        <p className="paragraph">{`REELS\nSOCIALES\nFASHION FILMS\nGRABACION DE VIDEOS\nCONTENIDO PARA REDES`}</p>
+      </section>
+      <section className="sectionTxtMobile"> 
+        <p className="title">{`TAMBIEN\nTE OFRECEMOS`}</p>
+        <p className="paragraph">{`ESTILISMO\nY PRODUCCION DE MODA`}</p>
+      </section>
+     </div>
+    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', marginBottom: '3rem'}}>
+      <p className="titleMobile" style={{marginBottom: '1rem', position: 'relative'}}>¿Tenés dudas?</p>
+    <Link href={"/preguntasfrecuentes"}><p className="paragraph paddingParagraph btnStyle">Te ayudamos a resolverlas</p></Link>  
+    </div>
+    </div>
+
+    <div className="homeDesktop">
       <div className="videoContainer">
         <Video url="https://res.cloudinary.com/dbohxop49/video/upload/v1724556947/estudio_cw6x13_mymjol.mp4" />
       </div>
@@ -139,7 +207,7 @@ export default function Home() {
         </div>
 
       </section>
-      
+
         {/* --------------------------------- */}
 
       <div className="marqueeContainer">
@@ -150,5 +218,6 @@ export default function Home() {
       </div>
       <Faqs />
     </div>
+    </>
   );
 }

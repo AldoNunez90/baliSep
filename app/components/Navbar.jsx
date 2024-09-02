@@ -60,9 +60,21 @@ export default function Navbar() {
         <NavItem href="/conocebali" className="liNav" >
           Conoce Bali
         </NavItem>
+        <span className="liNavDesktop">
         <NavItem href="/estudio" className="liNav" >
           Estudio
         </NavItem>
+        </span>
+        <span  className="liNavMobile" style={{display: 'none'}}>
+        <NavItem href="/sets" className="liNav" >
+          Sets
+        </NavItem>
+        </span>
+        <span className="liNavMobile" style={{display: 'none'}}>
+        <NavItem href="/equipos" className="liNav" >
+          Equipos
+        </NavItem>
+        </span>
         <NavItem href="/reservas" className="liNav" >
           Reservas
         </NavItem>

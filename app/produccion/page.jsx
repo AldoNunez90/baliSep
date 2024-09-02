@@ -59,7 +59,7 @@ console.log(secondaryCarouselRef.current);
 
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803710/2024_03_03_Baldo_Invierno_001_g4yvhi.jpg",
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.32.58_quiove.jpg",
       details: {
         Marca: { name: '@baldo.arg', link: 'https://www.instagram.com/baldo.arg/' },
         Modelo: { name: '@kibbelquesus', link: 'https://www.instagram.com/kibbelquesus/' },
@@ -67,7 +67,7 @@ console.log(secondaryCarouselRef.current);
         Fotografía: { name: '@gaillard.nadege', link: 'https://www.instagram.com/gaillard.nadege/' },  
         },
     }, //Nadege
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724804602/dsc09_bdm27t.jpg", //Law, 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.33.38_kttccg.jpg", //Law, 
       details: {
         Marca: {name: "@inlaw_ba", link: "https://www.instagram.com/inlaw_ba"},
         Modelo: {name: "@fifubassan", link: "https://www.instagram.com/fifubassan"},
