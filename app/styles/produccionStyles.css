@@ -18,7 +18,7 @@
 }
 
 .carouselSection{
-    padding: 5rem;
+    padding: 5rem 2rem;
 }
 
 .secondaryCarouselContainer{
@@ -31,14 +31,16 @@
 
 .produccionClose{
     position: relative !important;
-    width: 80vw !important;
-    height: auto !important;
-    margin: 5rem auto 8rem !important;
     display: block;
 }
 
 .creditsMainCarousel{
     margin-top: 1rem;
+}
+
+.swiper-slide{
+    height: auto !important;
+    display: flex !important;
 }
 
 /* Flechas carrusel */
@@ -54,9 +56,6 @@
     background-color: gray !important;
 }
 
-.imgMainCarousel:hover{
-    transform: scale(1.05);
-}
 
 /* modal*/
 
@@ -81,4 +80,27 @@
     max-height: 90%;
     overflow: auto; /* Permite scroll si el contenido es demasiado grande */
     z-index: 1001;
+  }
+
+  /* Overlay */
+
+  .creditsOverlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    color: white;
+    z-index: 1010;
+    align-content: end;
+    bottom: 0;
+  }
+
+  .swiper-slide:hover .creditsOverlay {
+    opacity: 1 !important;
+  }
+  .creditsParagraph{
+    margin-left: 15px;
+    margin-bottom: 15px;
   }

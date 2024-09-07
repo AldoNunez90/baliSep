@@ -15,14 +15,14 @@ export default function Footer() {
           height={142}
           />
           </Link>
-          <div className="socialNav socialFooter" style={{display: 'none'}}>
+          <div className="socialFooter" style={{display: 'none'}}>
         <a href="https://www.instagram.com/baliestudio/" target="_blank">
           <Image
             src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556037/iconIgWhite_dzr0ne.png"
             alt="instagram"
-            width={30}
-            height={30}
-            className="socialImg"
+            width={20}
+            height={20}
+            className="socialFooterImg"
           />
         </a>
         <a
@@ -32,9 +32,9 @@ export default function Footer() {
           <Image
             src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556040/iconWpWhite_izlidr.png"
             alt="wp"
-            width={30}
-            height={30}
-            className="socialImg"
+            width={20}
+            height={20}
+            className="socialFooterImg"
           />
         </a>
         <a
@@ -44,9 +44,9 @@ export default function Footer() {
           <Image
             src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556039/iconInWhite_uwuctw.png"
             alt="linkedin"
-            width={30}
-            height={30}
-            className="socialImg"
+            width={20}
+            height={20}
+            className="socialFooterImg"
           />
         </a>
       </div>
@@ -64,7 +64,7 @@ export default function Footer() {
             <li className="footerListItem"><Link href={"/privacidad"} className="footerRoutes">Políticas de privacidad</Link></li>
             <div className="footerListLine"></div>
         </ul>
-        <div className="footerSocialMedia footerText">
+        <div className="footerSocialMedia">
           <p className="footerTxtFirma">Página diseñada y desarrollada por <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1724556043/logoKranding_rtw9bz.png"} alt="Kranding" width={78} height={12} className="logoKranding"/></p>
             </div>
       </div>

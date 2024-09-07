@@ -19,6 +19,7 @@ const MainCarousel = ({ images, onImageClick }) => {
     }}
     navigation={true}
     breakpoints={{
+      320: { slidesPerView: 2 },
       640: { slidesPerView: 2 },
       768: { slidesPerView: 3 },
       1024: { slidesPerView: 4 },
@@ -26,16 +27,19 @@ const MainCarousel = ({ images, onImageClick }) => {
     modules={[Autoplay, Navigation]}>
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img src={image.url} alt={`Image ${index + 1}`} style={{ width: '100%', height: 'auto', cursor: 'pointer' }} className='imgMainCarousel' onClick={() => onImageClick(index)}/>
-          <div className='creditsMainCarousel'>
+          <img src={image.url} alt={`Image ${index + 1}`} style={{ width: '100%', height: 'auto'}} className='imgMainCarousel'/>
+          <div className='creditsMainCarousel creditsOverlay' onClick={() => onImageClick(index)}>
+            <div className='creditsParagraph'>
+              <p style={{marginBottom: '1rem'}}><strong>{image.title}</strong></p>              
           {Object.entries(image.details).map(([key, value], idx) => (
-                <p key={idx}>
+            <p key={idx} >
                   <strong>{key}:</strong>{' '}
-                  <a href={value.link} target="_blank" rel="noopener noreferrer">
+                  <a href={value.link} target="_blank" rel="noopener noreferrer" style={{color: 'white'}} onClick={(event) => event.stopPropagation()} >
                     {value.name}
                   </a>
                 </p>
               ))}
+              </div>
           </div>
         </SwiperSlide>
       ))}

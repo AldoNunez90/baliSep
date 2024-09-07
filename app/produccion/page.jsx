@@ -22,7 +22,8 @@ console.log(secondaryCarouselRef.current);
 
 
   const images = [
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803707/EDITORIAL-STEPHI02685_k6jntw.jpg", // Steph, 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723691/Mesa_de_trabajo_8_wznc7j.png", // Steph, 
+      title: "Editorial Sthep",
       details: {
         Ph: {name: "@gabrielbailoph", link: "https://www.instagram.com/gabrielbailoph"},
         Modelo:  {name: "@stephiimontero", link: "https://www.instagram.com/stephiimontero"}, 
@@ -32,22 +33,25 @@ console.log(secondaryCarouselRef.current);
         "Producción y diseño de vestuario": {name: "@movement.productora", link: "https://www.instagram.com/movement.productora"}
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803718/_DSF3483_ez6fkz.jpg", //Aylen 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723691/Mesa_de_trabajo_3_aueigq.png", //Aylen 
+      title: "Aylen",
       details: {
         Modelo: {name: "@aylencasini_", link: "https://www.instagram.com/aylencasini_"},
         Ph: {name: "@ivanherrera.ph", link: "https://www.instagram.com/ivanherrera.ph"}
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803721/_DSF2783_qkyt9k.jpg", //Bianca, 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723691/Mesa_de_trabajo_4_ee6zss.png", //Bianca, 
+      title: "Bianca",
       details: {
-        ph: {name: "@ivanherrera.ph", link: "https://www.instagram.com/ivanherrera.ph"},
+        Ph: {name: "@ivanherrera.ph", link: "https://www.instagram.com/ivanherrera.ph"},
         "Assist ph": {name: "@photostudiopop", link: "https://www.instagram.com/photostudiopop"},
-        model: {name: "@bianca.micuda", link: "https://www.instagram.com/bianca.micuda"} ,
-        diseños: {name: "@santiagodesign__", link: "https://www.instagram.com/santiagodesign__"},
-        makeup: {name: "@natufermakeup", link: "https://www.instagram.com/natufermakeup"},
+        Model: {name: "@bianca.micuda", link: "https://www.instagram.com/bianca.micuda"} ,
+        Diseños: {name: "@santiagodesign__", link: "https://www.instagram.com/santiagodesign__"},
+        Makeup: {name: "@natufermakeup", link: "https://www.instagram.com/natufermakeup"},
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724804483/DSC04676_uk7ggw.jpg", //Barbi, 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723691/Mesa_de_trabajo_1_xuexsf.png", //Barbi, 
+      title: "CHERRY BOMB",
       details: {
         Modelo: {name: "@barbieeferrari", link: "https://www.instagram.com/barbieeferrari"}, 
         Marca:  {name: "@bfstoreok", link: "https://www.instagram.com/bfstoreok"},
@@ -59,15 +63,17 @@ console.log(secondaryCarouselRef.current);
 
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.32.58_quiove.jpg",
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723692/Mesa_de_trabajo_7_gn7grx.png",  //Nadege
+      title: "Nadege",
       details: {
         Marca: { name: '@baldo.arg', link: 'https://www.instagram.com/baldo.arg/' },
         Modelo: { name: '@kibbelquesus', link: 'https://www.instagram.com/kibbelquesus/' },
         Estilista: { name: '@sonialifcha', link: 'https://www.instagram.com/sonialifcha/' },
         Fotografía: { name: '@gaillard.nadege', link: 'https://www.instagram.com/gaillard.nadege/' },  
         },
-    }, //Nadege
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725150886/WhatsApp_Image_2024-08-31_at_21.33.38_kttccg.jpg", //Law, 
+    },
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723691/Mesa_de_trabajo_6_mrysve.png", //Law, 
+      title: "IN LAW",
       details: {
         Marca: {name: "@inlaw_ba", link: "https://www.instagram.com/inlaw_ba"},
         Modelo: {name: "@fifubassan", link: "https://www.instagram.com/fifubassan"},
@@ -76,7 +82,8 @@ console.log(secondaryCarouselRef.current);
         Fotografía: {name: "@fiorellaperata", link: "https://www.instagram.com/fiorellaperata"}
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724804168/DSC04347_1FIORELLAPERATA_ywfnmq.jpg", //Fiorella, 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723691/Mesa_de_trabajo_5_dakeid.png", //Fiorella, 
+      title: "E-commerce Fio",
       details: {
         Modelo: {name: "@francescadcarolis", link: "https://www.instagram.com/francescadcarolis"},
         Modelo: {name: "@melodygiselle", link: "https://www.instagram.com/melodygiselle"},
@@ -91,7 +98,8 @@ console.log(secondaryCarouselRef.current);
         Gracias: {name: "@casaqueando", link: "https://www.instagram.com/casaqueando"}
       }
     },
-    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1724803739/DSC04804_nxax5v.jpg", //Clara, 
+    {url: "https://res.cloudinary.com/dbohxop49/image/upload/v1725723692/Mesa_de_trabajo_2_d5mw9j.png", //Klara, 
+      title: "Klara",
       details: {
         Model: {name: "@claramkovacic", link: "https://www.instagram.com/claramkovacic"},
         Photography: {name: "@noelpueblaphotography", link: "https://www.instagram.com/noelpueblaphotography"},
@@ -225,8 +233,8 @@ console.log(secondaryCarouselRef.current);
   };
 
   return (
-    <div>
-      <section>
+    <div style={{ userSelect: 'none' }}>
+      <section style={{position: 'relative', display: 'flex'}}>
         <p className="title produccionTitle">{`EN BALI\nCADA\nPRODUCCION\nES MAGIA\nGRACIAS A VOS`}</p>
         <Image
           src={
@@ -237,7 +245,7 @@ console.log(secondaryCarouselRef.current);
           className="imgIntroProduccion"
         />
       </section>
-      <section className="carouselSection">
+      <section className="carouselSection" style={{position: 'relative'}}>
         <div>
           <MainCarousel images={images} onImageClick={handleImageClick} />
           {selectedProduction !== null && (
@@ -245,8 +253,8 @@ console.log(secondaryCarouselRef.current);
           )}
         </div>
       </section>
-          <div>
-            <Image src={'https://res.cloudinary.com/dbohxop49/image/upload/v1725127627/132A3745_qramvc.jpg'} fill className="produccionClose" />
+          <div style={{position: 'relative'}}>
+            <Image src={'https://res.cloudinary.com/dbohxop49/image/upload/v1725730284/132A3354_1_g49do1.jpg'} fill className="produccionClose" alt="bali"/>
           </div>
 
     </div>
