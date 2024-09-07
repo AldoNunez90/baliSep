@@ -1,7 +1,7 @@
 .mouseGifContainer{
     position: fixed;
     left: 50%;
-    top: clamp(25rem, 47vw, 47rem );
+    bottom: 0;
     transform: translateX(-50%);
     transition: opacity 0.1s ease;
   }

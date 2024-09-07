@@ -1,11 +1,12 @@
-
+.imgProduccionMobile{
+    display: none;
+}
 
 .imgIntroProduccion{
     height: auto !important;
     position: relative !important;
     display: block;
     filter:brightness(70%)
-
 }
 
 .produccionTitle{

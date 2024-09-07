@@ -32,10 +32,10 @@ export default function Home() {
        <div className="txtContainer">
          <p className="title paddingParagraph">BALI ESTUDIO</p>
          <p className="paragraph paddingParagraph">
-           {`Un Espacio sofisticado para proyectos\nextraordinarios.\n\nSu arquitectura europea confiere al\nespacio una atmósfera sofisticada,\nideal para clientes que buscan un\nentorno distinguido para sus\nproyectos.`}
+           {`Un Espacio sofisticado para\nproyectos extraordinarios.\n\nSu arquitectura europea confiere al\nespacio una atmósfera sofisticada,\nideal para clientes que buscan un\nentorno distinguido para sus\nproyectos.`}
          </p>
          <Link href={"/conocebali"}>
-           <div className="btnStyle paragraph paddingParagraph">Conoce más</div>
+           <div className="btnWhiteStyle paragraph paddingParagraph">Conoce más</div>
          </Link>
        </div>
      </div>

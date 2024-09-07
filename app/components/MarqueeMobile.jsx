@@ -16,20 +16,18 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}
-      {textMarquee2 && <img src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png" alt="minicam" width={14} height={20} className="miniCam"/>}
+      {textMarquee2 && <img src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png" alt="minicam" width={12} height={16} className="miniCam"/>}
       
       {/* P2 - IMG2 */}
       <p className="textMarquee">{textMarquee}</p>
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}
@@ -39,8 +37,7 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}
@@ -50,8 +47,7 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}
@@ -61,8 +57,7 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}
@@ -72,8 +67,7 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}
@@ -83,8 +77,7 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
       <img
         src="https://res.cloudinary.com/dbohxop49/image/upload/v1724556035/iconCam_ghl5cv.png"
         alt="minicam"
-        width={14}
-        height={20}
+        width={12} height={16}
         className="miniCam"
       />
       {textMarquee2 && <p className="textMarquee">{textMarquee2}</p>}

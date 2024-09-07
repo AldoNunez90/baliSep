@@ -1,6 +1,17 @@
 
 @media only screen and (max-width: 785px){
 
+    .imgProduccionDesktop{
+        display: none;
+    }
+
+    .imgProduccionMobile{
+        height: auto !important;
+        position: relative !important;
+        display: block;
+        filter:brightness(70%)
+    }
+
     .homeMobile{
         display: block;
     }
@@ -26,6 +37,10 @@
         height: 60px;
     }
     
+    .textMarquee{
+        margin: 10px 20px;
+    }
+
     .carouselSection{
         padding: 3em 1rem !important;
     }
@@ -38,7 +53,7 @@
         border-radius: 5px;
         position: absolute;
         right: 0px;
-        top: 70px;
+        top: 55px;
         visibility: hidden;
         width: fit-content;
         align-items: end;
@@ -89,6 +104,7 @@
     .footerSocialMedia {
         align-self: unset;
         margin-bottom: 10px;
+        padding: 0 1.2rem;
     }
 
     .footerItems{
@@ -99,14 +115,12 @@
     }
 
     .footerText{
-        margin-left: 1rem;
         padding: 1rem 1.2rem;
 
     }
 
     .footerTxtFirma{
         font-size: 10px;
-        margin-left: 2vw;
     }
     
     .logoKranding{
@@ -124,11 +138,19 @@
         margin-right: 0.5rem;
      }
 
+     .creditsParagraph{
+        margin-left: 5px;
+        margin-bottom: 5px;
+        font-size: 12px;
+     }
+
     .produccionTitle{
+    width: 30vw;
     top: unset;    
     left: 2rem;
-    align-self: flex-end;
-    margin-bottom: 2rem;
+    align-self: center;
+    margin-top: 4rem;
+
 }
 
     .swiper-button-next, .swiper-button-prev{

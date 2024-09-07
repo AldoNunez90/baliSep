@@ -242,7 +242,15 @@ console.log(secondaryCarouselRef.current);
           }
           fill
           alt="producciones"
-          className="imgIntroProduccion"
+          className="imgIntroProduccion imgProduccionDesktop"
+        />
+        <Image
+          src={
+            "https://res.cloudinary.com/dbohxop49/image/upload/v1725735893/prodMobile_z6ovd5.jpg"
+          }
+          fill
+          alt="producciones"
+          className="imgProduccionMobile"
         />
       </section>
       <section className="carouselSection" style={{position: 'relative'}}>
