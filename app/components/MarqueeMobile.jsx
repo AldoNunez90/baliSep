@@ -7,7 +7,7 @@ export default function MarqueeHomeMobile({ textMarquee, textMarquee2 }) {
   return (
     <Marquee
       gradient={false}
-      speed={30}
+      speed={20}
       pauseOnHover={false}
       className="marquee-home-text"
     >

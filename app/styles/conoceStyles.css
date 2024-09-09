@@ -1,3 +1,15 @@
+
+
+.videoContainerConoceBali{
+  position: relative;
+  top: -60px;
+  display: flex;
+}
+
+.videoContainerConoceBali video{
+  width: -webkit-fill-available;
+  filter:brightness(80%)
+}
 .conoceBaliContainer{
   display: flex;
   flex-direction: column;

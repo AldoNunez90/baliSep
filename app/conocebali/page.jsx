@@ -9,7 +9,7 @@ export default function Conoce() {
 
   return (
     <div>
-      <div className="videoContainer">
+      <div className="videoContainerConoceBali">
         <Video url="https://res.cloudinary.com/dbohxop49/video/upload/v1724556947/estudio_cw6x13_mymjol.mp4" />
         <MouseGif />
       </div>

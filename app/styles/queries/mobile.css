@@ -5,11 +5,19 @@
         display: none;
     }
 
+    .preguntasFrecuentes{
+        display: block !important;
+    }
+
+    .notFound{
+        display: none !important;
+    }
+
     .imgProduccionMobile{
         height: auto !important;
         position: relative !important;
         display: block;
-        filter:brightness(70%)
+        filter:brightness(60%)
     }
 
     .homeMobile{
@@ -19,7 +27,10 @@
     .homeDesktop{
         display: none;
     }
-
+    .navBarHomeHero{
+        position: sticky;
+        top: 0;
+    }
     .socialNav{
         display: none;
     }
@@ -97,6 +108,10 @@
         display: none !important;
     }
 
+    .baliEstudioText{
+        background-color: unset;
+    }
+
     .footerLinks{
         align-items: center;
     }
@@ -155,5 +170,119 @@
 
     .swiper-button-next, .swiper-button-prev{
         display: none !important;
+    }
+
+
+    /* Preguntas frecuentes */
+
+    .questionIcon{
+        width: 4rem !important;
+        height: auto !important;
+        position: relative !important;
+    }
+
+    .fqsMobileContainer{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-top: 2rem;
+        position: relative;
+    }
+
+    .subtitleMobile{
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-right:   1rem;
+    }
+
+    .fqsMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 3rem 0;
+    }
+
+    .fqsMobileItem{
+        width: 60%;
+        margin: 0.5rem;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .plusQuestion{
+        font-size: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .questionMobileTxt{
+        font-size: clamp(0.8rem, 1.5vw, 1.3rem);
+        width: 90%;
+    }
+    .answerTxtMobile{
+        width: 100%;
+        font-size: clamp(0.9rem, 1.5vw, 1.3rem);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .closeModalAnswer{
+        display: grid;
+        width: 100%;
+        
+    }
+
+
+    .closModalMobileX{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+    }
+
+    .overlayAnswer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+        z-index: 99;
+    }
+
+    .answers{
+        padding: 1rem 0rem 3rem 0rem;
+        width: 100%;
+        position: fixed; /* Fija el modal en la pantalla incluso cuando se hace scroll */
+        top: 50%; /* Coloca el modal en la mitad vertical de la pantalla */
+        left: 50%; /* Coloca el modal en la mitad horizontal de la pantalla */
+        transform: translate(-50%, -50%); /* Ajusta la posición para que el modal esté perfectamente centrado */
+        z-index: 1000; 
+        animation: slideInFromRight 0.5s ease-out; /* Animación al abrirse */
+    }
+
+    @keyframes slideInFromRight {
+        0% {
+          transform: translate(100%, -50%); /* Comienza fuera de la pantalla a la derecha */
+        }
+        100% {
+          transform: translate(-50%, -50%); /* Termina centrado en la pantalla */
+        }
+      }
+
+    
+
+    .selected{
+        color: gray;
     }
 }

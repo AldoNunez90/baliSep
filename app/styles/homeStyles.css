@@ -7,10 +7,12 @@
 .videoContainer{
     width: 100%;
     display: flex;
+    justify-content: center;
+    background-color: black;
   }
 
   .videoContainer video{
-    width: -webkit-fill-available;
+    width: 100%;
     filter:brightness(80%)
   }
 /* Pictures Home */
@@ -51,8 +53,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    /* position: sticky;
+    top: 60px; */
+}
+.baliEstudioPictures{
+    position: sticky;
+    top: 60px;
 }
 
+.txtSticky{
+    position: sticky;
+    top: 60px;
+}
 .txtContainer{
     display: flex;
     flex-direction: column;
@@ -64,13 +77,18 @@
     justify-content: center;
     align-items: center;
     background-color: black;
+    z-index: 1;
 }
 
 .baliLogoCenter{
     background-color: black;
-    position: relative !important;
+    position: sticky !important;
     width: clamp(7rem, 35vw, 25rem) !important;
     height: auto !important;
+    bottom: unset !important;
+    left: unset !important;
+    right: unset !important;
+    top: 60px !important;
 }
 
 .extraTitleContainer{
@@ -79,12 +97,22 @@
     align-items: center;
     background-color: black;
     color: white;
+    z-index: 1;
+}
+
+.extraTitle{
+    position: sticky;
+    top: 60px;
 }
 
 .dobleTxtBox{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.secondParagraph{
+    margin-top: 2rem;
 }
 
 .selected{

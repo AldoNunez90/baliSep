@@ -20,7 +20,6 @@ export default function Navbar() {
       </Link>
     );
   };
-  console.log(openMenu);
 
   return (
     <nav className="navBarHomeHero">
