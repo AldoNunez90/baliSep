@@ -14,48 +14,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
+  margin: auto;
 }
 
-.conoceBaliImgContainer {
-    width: 50vw;
-  }
+.conoceBaliContainer2{
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  margin: 5rem auto;
+}
 
   .conoceParagraph{
-    padding: 4vw 0;
+    text-align: justify;
   }
 
   .imgConoceBali {
-    display: flex;
-    justify-self: center;
     position: relative !important;
   } 
+
+  .conoceBaliImgContainer{
+    margin: 4rem 0;
+  }
   /* img con background */
   .textConoceBali {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
-  
-  .imgConoceBali {
-    display: flex;
-    justify-self: center;
-    position: relative !important;
-  }
-  
      
   .studio2Container {
-    margin: 7vw 5vw;
-  }
-  
-  .ademasContainer {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    align-items: center;
-    margin-top: 2vw;
+    padding: 0 2rem;
   }
   
   .conocePhotosContainer {
     width: -webkit-fill-available;
+    margin: 8rem 0;
   }
   
   .video-background {
@@ -80,12 +76,13 @@
   }
   
   .conocePhotoTxt {
-    margin-left: 1vw;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
   }
   .conocePhoto2 {
     display: block;
     position: unset;
-    width: 20vw !important;
+    width: 25vw !important;
     z-index: 1;
     position: unset !important;
   }
@@ -96,11 +93,11 @@
   .overlay {
     position: absolute;
     background: rgba(0, 0, 0, 0.7);
-    width: 20vw;
+    width: 25vw;
     opacity: 0;
     transition: 0.5s ease;
     color: white;
-    font-size: 0.8vw;
+    font-size: clamp(0.7rem, 1vw, 1rem);
     z-index: 2;
     align-content: center;
     bottom: 0;
@@ -120,5 +117,6 @@
   .imgContainerModel:hover .overlay {
     opacity: 1;
   }
-  
+
+
   

@@ -283,6 +283,46 @@
     
 
     .selected{
-        color: gray;
+        color:#808080;
     }
+
+    .imgSetsIntro, .imgSetsIntro, .setPalaceTitleTxt, .setPalaceImgIntro, .setPalaceImgDetails{
+        width: 100% !important;
+        height: auto !important;
+        position: relative !important;
+        display: block !important;
+    }
+
+    .setPalaceContainer{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        grid-template-columns: 50% 50%;
+        margin-top: 1rem;
+    }
+
+    .setPalaceImgContainer{
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 1rem auto;
+    }
+    /* .setPalaceTitleTxt{
+        width: 50% !important;
+    } */
+
+    .setPalaceTitle{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .setPalaceTxt{
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
+        white-space: pre-wrap;
+        font-weight: 500;
+        align-content: flex-end;
+        text-align: left;
+    }
+
 }

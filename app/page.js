@@ -134,7 +134,7 @@ export default function Home() {
               {`Con gran vocación de servicio,\nnuestro equipo está siempre dispuesto\na asistir a nuestros clientes en cada\netapa de su proyecto, brindando soporte\ny soluciones personalizadas.\n`}
             </p>
             <p className="paragraph">
-              ¡Vení a Conocernos y tener una Baliexperience!
+              <strong>¡Vení a Conocernos y tener una Baliexperience!</strong> 
             </p>
           </div>
         </div>
@@ -167,7 +167,7 @@ export default function Home() {
           <div className="txtSticky">
             <p className="title">{`SESIONES    \nFOTOGRÁFICAS `}</p>
             <p className="paragraph">
-              {`PRODUCTO\nE COMMERCE\nEDITORIALES DE MODA\nLOOKBOOK\nCAMPAÑAS PUBLICITARIAS           `}
+              {`PRODUCTO\nLOOKBOOK\nE COMMERCE\nEDITORIALES DE MODA\nCAMPAÑAS PUBLICITARIAS           `}
             </p>
           </div>
         </div>
@@ -175,7 +175,7 @@ export default function Home() {
         {/* -------------------------------------- */}
         <div className="extraTitleContainer">
           <p className="extraTitle">
-            {`EN\nNUESTROS\nESPACIOS\nPODRAS\nHACER:`}
+            {`EN\nNUESTROS\nESPACIOS\nPODRAS\nHACER`}
           </p>
         </div>
         <div className="baliEstudioText dobleTxtBox">
@@ -199,9 +199,9 @@ export default function Home() {
         </div>
         <div className="baliEstudioText">
           <div className="txtSticky">
-            <p className="title">{`AMAMOS LA MODA`}</p>
+            <p className="title">{`TAMBIEN TE OFRECEMOS...`}</p>
             <p className="paragraph">
-              {`ESTILISMO\nPRODUCCIÓN DE MODA Y EVENTOS`}
+              {`ESTILISMO y PRODUCCIÓN DE MODA`}
             </p>
           </div>
         </div>
