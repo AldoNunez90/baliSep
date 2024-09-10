@@ -286,7 +286,7 @@
         color:#808080;
     }
 
-    .imgSetsIntro, .imgSetsIntro, .setPalaceTitleTxt, .setPalaceImgIntro, .setPalaceImgDetails{
+    .imgSetsIntro, .imgSetsIntro, .setPalaceTitleTxt, .setPalaceImgIntro, .setPalaceImgDetails, .setDuoImgTitle, .setDuoIntro, .setDuoImg, .setAzulImgIntro, .setAzulImg, .mapStudio{
         width: 100% !important;
         height: auto !important;
         position: relative !important;
@@ -302,15 +302,16 @@
         margin-top: 1rem;
     }
 
-    .setPalaceImgContainer{
+    .setPalaceImgContainer, .setAzulImgContainer{
         display: grid;
-        width: 95%;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 1rem auto;
     }
-    /* .setPalaceTitleTxt{
-        width: 50% !important;
-    } */
+
+    .setDuoImgContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .setPalaceTitle{
         display: grid;
@@ -325,4 +326,56 @@
         text-align: left;
     }
 
+    .setDuoHero, .setPalaceHero, .setAzulHero{
+        padding: 0 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .setDuoTitleContainer, .setAzulTitleContainer{
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        margin-top: 1rem;
+    }
+
+    .setDuoTxtContainer, .setAzulTxtContainer{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .setDuoTxt{
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
+        white-space: pre-wrap;
+        font-weight: 500;
+        align-content: flex-end;
+        text-align: left;
+        margin-bottom:  0.5rem;
+        margin-left: 0.5rem;
+    }
+
+    .setAzulTxt{
+        font-size: clamp(0.7rem, 1.5vw, 1rem);
+        white-space: pre-wrap;
+        font-weight: 500;
+        align-content: flex-end;
+        text-align: left;
+        margin-bottom:  0.5rem;
+        margin-left: 0.5rem;
+    }
+
+
+    .setAzulImg{
+        width: 95% !important;
+        justify-self: center;
+    }
+
+    .studioMapContainer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mapStudio{
+        width: 90% !important;
+        margin: 2rem 0;
+    }
 }

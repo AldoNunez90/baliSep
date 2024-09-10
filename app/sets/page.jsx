@@ -6,7 +6,8 @@ export default function Sets() {
         <>
         <div className="setsContainerHero">
            <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984351/setsIntro_jljtaf.jpg"} fill alt="setsIntro" className="imgSetsIntro"/>
-        <section>
+        <section className="setPalaceHero">
+            {/* Set Palace */}
         <div className="setPalaceContainer">
             <div className="setPalaceTitle">
                 <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984280/01-setPalace_otvrea.png"} fill alt="set Palace" className="setPalaceTitleTxt"/>
@@ -23,22 +24,48 @@ export default function Sets() {
         </div>
         </section>
 
+        <section className="setDuoHero">
+        {/* Set DUO */}
+        <div className="setDuoTitleContainer">
+            <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984347/setDuo01_odz0ge.png"} fill alt="Set DUO" className="setDuoImgTitle" />
+            <div className="setDuoTxtContainer"><p className="setDuoTxt">{`Amplio set rectangular\nPorta fondo fijo Balcón francés\nDoble iluminación\nGrupos de trabajo grandes`}</p></div>
+            <div></div>            
+        </div>
+        <div>
+            <div>
+                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984348/setDuo02_zj0zns.jpg"} fill alt="Set Duo" className="setDuoIntro"  />
+            </div>
+            <div className="setDuoImgContainer">
+            <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984344/setDuo03_ldbwkw.jpg"} fill alt="setDuo" className="setDuoImg" />
+            <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984227/setDuo05_slxafy.jpg"} fill alt="setDuo" className="setDuoImg" />
+            <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984227/setDuo05_slxafy.jpg"} fill alt="setDuo" className="setDuoImg" />
+            </div>
 
-
-
-        <section>
-
+        </div>
         </section>
 
-
-
-        <section>
-
+        <section className="setAzulHero">
+            {/* Set Azul */}
+            <div className="setAzulTitleContainer">
+                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984346/setAzul01_spotfg.png"} fill alt="Set Azul" className="setAzulImgIntro" />
+                <div className="setAzulTxtContainer"><p className="setAzulTxt">{`Pared azul naval con molduras\nBalcon francés\nHermosa iluminación natural`}</p></div>
+                <div></div>
+            </div>
+            <div>
+                <div>
+                    <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984352/setAzul-02_pzorhg.jpg"} fill alt="setAzul" className="setAzulImgIntro"/>
+                </div>
+            <div className="setAzulImgContainer">
+                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984354/setAzul03_fxapbo.jpg"} alt="set Azul" fill className="setAzulImg" />
+                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984349/setAzul04_qq0vll.jpg"} alt="set Azul" fill className="setAzulImg" />
+                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984349/setAzul04_qq0vll.jpg"} alt="set Azul" fill className="setAzulImg" />
+            </div>
+            </div>
         </section>
 
-
-
-
+        <section className="studioMapContainer">
+            <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984227/setsPlano_k9w5t4.png"} fill alt="Map studio" className="mapStudio" />
+        </section>
         </div>
         </>
         );
