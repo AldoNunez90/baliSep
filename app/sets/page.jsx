@@ -14,7 +14,7 @@ export default function Sets() {
                 <div className="setPalaceTxt">{`Set con forma circular\nBalcón francés\nAmplio ventanal\nGran iluminación natural`}</div>
             </div>
             <div className="setPalaceImg">
-                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984346/No_spgmht.jpg"} fill alt="set Palace" className="setPalaceImgIntro"/>
+                <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/t_setPalace0101/v1725984346/No_spgmht.jpg"} fill alt="set Palace" className="setPalaceImgIntro"/>
             </div>
         </div>
         <div className="setPalaceImgContainer">

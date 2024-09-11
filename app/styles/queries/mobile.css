@@ -173,6 +173,44 @@
     }
 
 
+    .conoceBaliContainer{
+        width: 80%;
+    }
+
+    .conocePhotoTxt{
+        margin-left: 0.5rem;
+    }
+
+    .overlay, .conocePhoto2{
+        width: 30vw !important;
+    }
+    
+    .imgContainerModel{
+        top: 10px;
+    }
+
+    .conocePhotosContainer, .conoceBaliImgContainer{
+        margin: 3rem 0;
+    }
+
+    .studio2Container{
+        padding: unset;
+        margin-right: 0.7rem;
+    }
+
+    .conoceParagraph{
+        font-size: clamp( 0.7rem, 2vw , 1rem);
+    }
+
+    .conoceBaliContainer2{
+        width: 95%;
+        margin: 3rem auto;
+    }
+
+    .videoContainerConoceBali{
+        top: 0;
+        margin-bottom: 2rem;
+    }
     /* Preguntas frecuentes */
 
     .questionIcon{
@@ -260,6 +298,10 @@
         z-index: 99;
     }
 
+    .no-scroll {
+        overflow: hidden;
+      }
+
     .answers{
         padding: 1rem 0rem 3rem 0rem;
         width: 100%;
@@ -298,14 +340,14 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
         margin-top: 1rem;
     }
 
     .setPalaceImgContainer, .setAzulImgContainer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 1rem auto;
+        margin: 0.5rem auto 0;
     }
 
     .setDuoImgContainer{
@@ -324,11 +366,12 @@
         font-weight: 500;
         align-content: flex-end;
         text-align: left;
+        padding: 0.1rem;
     }
 
     .setDuoHero, .setPalaceHero, .setAzulHero{
         padding: 0 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
     }
 
     .setDuoTitleContainer, .setAzulTitleContainer{
@@ -377,5 +420,46 @@
     .mapStudio{
         width: 90% !important;
         margin: 2rem 0;
+    }
+
+    .equipoDetailsMobile{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 95%;
+        margin: 2rem auto;
+    }
+
+    .equiposImgContainerMobile{
+        display: flex;
+        align-items: center;
+    }
+ 
+    .equiposImgMobile{
+        width: 95% !important;
+        height: auto !important;
+        position: relative !important;
+    }
+
+    .equiposCenterText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titleContactoMobile{
+        font-weight: 800;
+    }
+
+    .inputContact{
+        font-size: 1rem;
+    }
+
+    .googleMap{
+        width: unset;
+        height: auto;
+    }
+
+    .paragraphContactMobile, .titleContactoMobile{
+        font-size: clamp( 1rem, 1.5vw , 1.5rem);
     }
 }

@@ -35,7 +35,12 @@ export default function PreguntasFrecuentes(){
     
       const handleClick = (id)=>{
           setOptionSelected(id)
-         
+      }
+
+      if(optionSelected){
+        document.body.classList.add('no-scroll')
+      } else {
+        document.body.classList.remove('no-scroll');
       }
     
       const Answer = ({ option }) => (
@@ -66,7 +71,7 @@ export default function PreguntasFrecuentes(){
                 <span  onClick={() => handleClick(question.id)} className="plusQuestion">+</span>
                 </div>))}
             </div>
-             {optionSelected && <div className="overlayAnswer"></div>} 
+             {optionSelected && <div className="overlayAnswer" onClick={() => handleClick(null)}></div>} 
              {optionSelected && <div className="answers"> <Answer option={optionSelected}/></div> } 
         </div >
                     </>

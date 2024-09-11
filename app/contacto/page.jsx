@@ -106,9 +106,9 @@ export default function Contacto() {
   return (
     <div className="contactContainer">
       <div className="contactoContainer">
-        <p className="subTitle paddingParagraph introPadding">{`La familia\nBali Estudio\nte espera!`}</p>
-        <p className="paragraph paddingParagraph">{`La creatividad se encuentra en el encanto\nde Buenos Aires! En nuestros 110 metros\ncuadrados, fusionamos la elegancia del estilo\nfrancés con el minimalismo moderno, ofreciendo\n3 sets diferentes para que tus ideas cobren vida.`}</p>
-        <p className="paragraph paddingParagraph"><b>Nos encantaría saber de vos :)</b></p>
+        <p className="subTitle paddingParagraph introPadding titleContactoMobile">{`La familia\nBali Estudio\nte espera!`}</p>
+        <p className="paragraphContactMobile paragraph paddingParagraph">{`La creatividad se encuentra en el encanto\nde Buenos Aires! En nuestros 110 metros\ncuadrados, fusionamos la elegancia del estilo\nfrancés con el minimalismo moderno, ofreciendo\n3 sets diferentes para que tus ideas cobren vida.`}</p>
+        <p className="paragraphContactMobile paragraph paddingParagraph"><b>Nos encantaría saber de vos :)</b></p>
       </div>
       <div className="formContact">
       {isOpen && <div className="overlayDialog"></div> }
