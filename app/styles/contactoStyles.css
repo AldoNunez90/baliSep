@@ -1,3 +1,8 @@
+.contactContainer{
+  position: relative;
+  top: 60px;
+}
+
 .introPadding{
   padding-top: 2vw;
 }

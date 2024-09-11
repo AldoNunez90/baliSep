@@ -609,39 +609,41 @@ function SetDuoReserve() {
       <div className="bookingSetPalaceHero">
         {selectedDate === null ? (
           <div className="bookingSetPalaceContainer">
-            <div className="setPalaceDetailsContent setPalaceImg setDuoImgContainer">
+            <div className="setDuoImgReserveContainer">
               <Image
                 src={
-                  "https://res.cloudinary.com/dsdzvhfhh/image/upload/v1723523644/SET_DUO_RESERVAS_nnil25.png"
+                  "https://res.cloudinary.com/dbohxop49/image/upload/v1726020599/setDuo_yy2rwe.jpg"
                 }
                 alt="setPalace"
                 fill
                 className="setDuoImg"
               />
+              <div className="overlayImgReservas"> <p className="setsOverlayTxt">SET DUO</p> </div>
             </div>
-            <div className="setPalaceDetailsContent setPalaceText">
-              <h4 className="setPalaceTitle setPalaceAzulTxt">
-                Ideal para fotos | entrevistas | videos | podcasts
+            <div className="paragraph marginParagraphReserve ">
+              <h4 className="paragraph marginParagraphReserve ">
+               <strong>Ideal para fotos | entrevistas | videos</strong> 
               </h4>
-              <p className="setPalaceAzulTxt">{`El valor del alquiler incluye:`}</p>
-              <p className="setPalaceAzulTxt">{`• Bajada de infinito color blanco, verde o gris.\n• Uso del espacio especificado en la reserva\n• 3 flashes con accesorios`}</p>
-              <p className="setPalaceSmall setPalaceAzulTxt">
+              <p className="paragraph">{`El valor del alquiler incluye:`}</p>
+              <p className="paragraph marginParagraphReserve">{`• Bajada de infinito color blanco, verde o gris.\n• Uso del espacio especificado en la reserva\n• 3 flashes con accesorios`}</p>
+              <p className="paragraph marginParagraphReserve">
                 Otros accesorios/espacios pueden tener costo adicional, por
                 favor <a href="https://wa.me/+5491154171668?text=Hola! Tengo una consulta sobre el Set DUO" style={{color: 'blue', textDecoration: 'unset'}} target="_blank">consúltenos</a> 
               </p>
-              <p className="setPalaceAzulTxt">
-                Tiempo mínimo de reserva: 2 hs.
-              </p>
+              <div className="setPalaceAzulMinimo marginParagraphReserve">
+              <img src="/clockRegular.svg" alt="clock" className="clockIcon" />
+              <p className="smallParagraph">Tiempo mínimo de reserva: 2 hs.</p> 
+              </div>
               <div className="setPalaceBtns">
                 {calendarId === false ? (
                   <button
                     onClick={() => handleLogin()}
-                    className="startBookingBtn"
+                    className="btnStyle"
                     >
                     Reservar
                   </button>
                 ) : (<>
-                  <button onClick={clearBooking} className="cancelBookingBtn">
+                  <button onClick={clearBooking} className="btnStyle">
                     Cancelar
                   </button>  
                 </>

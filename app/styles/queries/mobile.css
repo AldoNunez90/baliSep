@@ -462,4 +462,33 @@
     .paragraphContactMobile, .titleContactoMobile{
         font-size: clamp( 1rem, 1.5vw , 1.5rem);
     }
+
+    .setPalaceImgReserveContainer{
+        width: 95%;
+    }
+
+    .btnStyle{
+        background-color: black;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  padding: 5px 10px;
+  border: none;
+  margin: 0.5rem 0;
+  font-size: clamp(0.7rem, 2vw, 1rem);
+    }
+
+    .reservasHero{
+        top: 0;
+    }
+
+    .marginParagraphReserve{
+        margin-bottom: 1rem;
+    }
+
+    .setDuoImgReserveContainer{
+        width: 95%;
+    }
 }

@@ -1,4 +1,5 @@
 import { Raleway } from "next/font/google";
+import "./styles/reservasStyles.css"
 import "./styles/conoceStyles.css"
 import "./styles/produccionStyles.css"
 import "./styles/contactoStyles.css"

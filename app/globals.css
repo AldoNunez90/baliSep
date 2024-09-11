@@ -158,6 +158,10 @@ p{
   overflow: hidden;
 }
 
+.letraChica{
+  font-size: clamp(0.6rem, 1vw, 1rem)
+}
+
 
 
 

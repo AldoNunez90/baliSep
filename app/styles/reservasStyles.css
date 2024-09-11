@@ -1,0 +1,92 @@
+.reservasHero{
+    top: 60px;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.reservasIntroContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.reservasContainer{
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.bookingSetPalaceContainer{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.setPalaceImgReserveContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.setDuoImgReserveContainer{
+    width: 50%;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.setPalaceAzulImg, .setDuoImg{
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+}
+
+.overlayImgReservas {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    color: white;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+    z-index: 2;
+    align-content: center;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .setPalaceImgReserveContainer:hover .overlayImgReservas {
+    opacity: 1;
+  }
+
+  .setDuoImgReserveContainer:hover .overlayImgReservas{
+    opacity: 1;
+  }
+
+  .setsOverlayTxt{
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 900;
+  }
+
+  .setPalaceAzulMinimo{
+    display: flex;
+    align-items: center;
+  }
+
+  .marginParagraphReserve{
+    margin-bottom: 1.5rem;
+  }
+
+  .clockIcon{
+    width: 12px;
+    margin-right: 0.5rem;
+  }
+  .smallParagraph{
+    font-size: clamp(0.7rem, 1vw, 1rem);
+  }

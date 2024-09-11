@@ -48,7 +48,7 @@ function SetPalaceReserve() {
     const query = new URLSearchParams(window.location.search);
     const authStatus = query.get('auth');
     if (authStatus === 'success') {
-      // Ejecuta setCalendarId o cualquier otra lógica
+      // Ejecuta setCalendarId 
       setCalendarId(idCalendarSetPalace)
         } else if (authStatus === 'error') {
       // Muestra un mensaje de error
@@ -324,7 +324,9 @@ function SetPalaceReserve() {
 
           <>
         <div className="dialogReserveDetails">
-        <div className="dialogReserveContent"><Image src={'https://res.cloudinary.com/dsdzvhfhh/image/upload/v1722902344/logoOk_wxvkgt.png'} alt="ok" fill className="recervedOk"/></div>
+        <div className="dialogReserveContent">
+          <Image src={'https://res.cloudinary.com/dsdzvhfhh/image/upload/v1722902344/logoOk_wxvkgt.png'} alt="ok" fill className="recervedOk"/>
+          </div>
         <div className="dialogReserveContent">
         <div>
         <p className="dialogTitle">{`Tu reserva se ha completado\ncorrectamente`}</p>
@@ -375,12 +377,10 @@ function SetPalaceReserve() {
         }}  className="confirmBtn" style={{alignSelf: "center"}}>Volver</button>
         </>
       )
-    } else if(responseOk === 'loading'){
-      return <div className="custom-loader" style={{alignSelf: 'center'}}></div>
-      
+    } else if (responseOk === 'loading'){
+      return <div className="custom-loader" style={{alignSelf: 'center'}}></div>  
     }
   }
-
 
     return(
       
@@ -609,39 +609,49 @@ function SetPalaceReserve() {
       <div className="bookingSetPalaceHero">
         {selectedDate === null ? (
           <div className="bookingSetPalaceContainer">
-            <div className="setPalaceDetailsContent setPalaceImg">
+            <div className="setPalaceImgReserveContainer">
               <Image
                 src={
-                  "https://res.cloudinary.com/dsdzvhfhh/image/upload/v1722902346/setPalaceAzul_upli64.png"
+                  "https://res.cloudinary.com/dbohxop49/image/upload/v1726020601/05-setPalace2_wgzytw.png"
                 }
                 alt="setPalace"
                 fill
                 className="setPalaceAzulImg"
               />
+              <Image
+                src={
+                  "https://res.cloudinary.com/dbohxop49/image/upload/v1726020597/setAzul-02_w5bamb.jpg"
+                }
+                alt="setPalace"
+                fill
+                className="setPalaceAzulImg"
+              />
+            <div className="overlayImgReservas"> <p className="setsOverlayTxt">SETS PALACE & AZUL</p> </div>
             </div>
             <div className="setPalaceDetailsContent setPalaceText">
-              <h4 className="setPalaceTitle setPalaceAzulTxt">
-                Ideal para fotos | entrevistas | videos | podcasts
+              <h4 className="paragraph marginParagraphReserve">
+              <strong>Ideal para fotos | entrevistas | videos </strong> 
               </h4>
-              <p className="setPalaceAzulTxt">{`El valor del alquiler incluye:`}</p>
-              <p className="setPalaceAzulTxt">{`• Bajada de infinito color blanco, verde o gris.\n• Uso del espacio especificado en la reserva\n• 3 flashes con accesorios`}</p>
-              <p className="setPalaceSmall setPalaceAzulTxt">
+              <p className="paragraph">{`El valor del alquiler incluye:`}</p>
+              <p className="paragraph marginParagraphReserve">{`• Bajada de infinito color blanco, verde o gris.\n• Uso del espacio especificado en la reserva\n• 3 flashes con accesorios`}</p>
+              <p className="paragraph marginParagraphReserve">
                 Otros accesorios/espacios pueden tener costo adicional, por
                 favor <a href="https://wa.me/+5491154171668?text=Hola! Tengo una consulta sobre el Set Palace / Azul" style={{color: 'blue', textDecoration: 'unset'}} target="_blank">consúltenos</a>
               </p>
-              <p className="setPalaceAzulTxt">
-                Tiempo mínimo de reserva: 2 hs.
-              </p>
+              <div className="setPalaceAzulMinimo marginParagraphReserve">
+              <img src="/clockRegular.svg" alt="clock" className="clockIcon" />
+              <p className="smallParagraph">Tiempo mínimo de reserva: 2 hs.</p> 
+              </div>
               <div className="setPalaceBtns">
                 {calendarId === false ? (
                   <button
                   onClick={() => handleLogin()}
-                    className="startBookingBtn"
+                    className="btnStyle"
                     >
                     Reservar
                   </button>
                 ) : (<>
-                  <button onClick={clearBooking} className="cancelBookingBtn">
+                  <button onClick={clearBooking} className="btnStyle  ">
                     Cancelar
                   </button>  
                 </>
