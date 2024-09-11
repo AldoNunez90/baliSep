@@ -19,7 +19,7 @@ export default function Conoce() {
         <div className="conoceBaliImgContainer">
           <Image
             src={
-              "https://res.cloudinary.com/dbohxop49/image/upload/v1725976767/conocebali1_epicjg.jpg"
+              "https://res.cloudinary.com/dbohxop49/image/upload/v1726079076/conocebali1_gxpkr2.jpg"
             }
             alt="Studio"
             fill

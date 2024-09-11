@@ -9,7 +9,9 @@ export default function Estudio() {
   const [displayEstudio, setDisplayStudio] = useState("set");
 
   return (
-    <div>
+    <>
+    <div className="warningDesktop" style={{display: 'none'}}> Este elemento no está disponible para esta pantalla</div>
+    <div className="equiposDesktop">
       <div className="imgContainer">
         <Image
           src={"https://res.cloudinary.com/dbohxop49/image/upload/v1724605349/estudioImg1_nqbt6z.jpg"}
@@ -53,5 +55,6 @@ export default function Estudio() {
       </div>
       {displayEstudio === "set" ? <Sets /> : <Equipos />}
     </div>
+    </>
   );
 }

@@ -1,6 +1,19 @@
 
 @media only screen and (max-width: 785px){
 
+    .warningDesktop{
+        display: flex !important;
+        width: 100%;
+        height: 100vw;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .equiposDesktop{
+        display: none !important;
+    }
+
     .imgProduccionDesktop{
         display: none;
     }
@@ -30,6 +43,7 @@
     .navBarHomeHero{
         position: sticky;
         top: 0;
+        height: 60px;
     }
     .socialNav{
         display: none;
@@ -44,8 +58,8 @@
         width: unset;
     }
 
-    .navBarHomeHero{
-        height: 60px;
+    .contactContainer{
+        top: 0;
     }
     
     .textMarquee{

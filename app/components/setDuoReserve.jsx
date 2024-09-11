@@ -637,7 +637,7 @@ function SetDuoReserve() {
               <div className="setPalaceBtns">
                 {calendarId === false ? (
                   <button
-                    onClick={() => handleLogin()}
+                    // onClick={() => handleLogin()}
                     className="btnStyle"
                     >
                     Reservar
