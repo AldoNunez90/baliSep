@@ -21,6 +21,22 @@ export default async (phase, { defaultConfig }) => {
         CALENDAR_ID_SET_PALACE: process.env.CALENDAR_ID_SET_PALACE,
         CALENDAR_ID_SET_DUO: process.env.CALENDAR_ID_SET_DUO,
       },
+
+      webpack(config) {
+        config.module.rules.push({
+          test: /\.(mp4|webm|ogg|swf|ogv|avi|mov)$/, // Archivos de video
+          use: {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[hash].[ext]',
+              publicPath: '/_next/static/videos/',
+              outputPath: 'static/videos/',
+            },
+          },
+        });
+    
+        return config;
+      },
     };
     return nextConfig;
   };

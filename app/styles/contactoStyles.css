@@ -25,7 +25,10 @@
 .formContactComponent{
     display: flex;
     flex-direction: column;
+    width: 35vw;
 }
+
+
 
 .inputContact{
     border: none;
@@ -71,6 +74,10 @@
     display: flex;
     justify-content: center;
     margin-bottom: 5vw;
+}
+
+.imgFormContact iframe {
+  width: 35vw;
 }
 
 .contactImg{

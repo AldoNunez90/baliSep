@@ -1,5 +1,17 @@
+@media only screen and (max-width: 1180px) {
+    .MouseGif_mouseGifContainer__kyJJb {
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 785px){
+
+    .bookingSetPalaceHero{
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 2fr;
+    }
+
+    
 
     .warningDesktop{
         display: flex !important;
@@ -118,12 +130,22 @@
         display: block !important;
     }
 
+    .itemSetMobile a {
+        display: block;
+    }
+
     .liNavDesktop{
         display: none !important;
     }
 
     .baliEstudioText{
         background-color: unset;
+    }
+
+    .footerContainer{
+        bottom: 0px;
+    position: relative;
+    width: 100%;
     }
 
     .footerLinks{
@@ -198,6 +220,10 @@
     .overlay, .conocePhoto2{
         width: 30vw !important;
     }
+
+    .overlayMobile{
+        display: block;
+      }
     
     .imgContainerModel{
         top: 10px;
@@ -310,6 +336,10 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
         z-index: 99;
+    }
+
+    .overlayImgReservas{
+        opacity: 1;
     }
 
     .no-scroll {
@@ -505,4 +535,13 @@
     .setDuoImgReserveContainer{
         width: 95%;
     }
+
+    .formContactComponent{
+        width: unset !important;
+    }
+
+    .imgFormContact iframe {
+        width: unset !important;
+    }
+    
 }

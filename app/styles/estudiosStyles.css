@@ -1,6 +1,7 @@
 .setPalaceHeroDesktop, .setDuoHeroDesktop, .setAzulHeroDesktop{
     width: 60%;
     margin: auto;
+    margin-top: 2rem;
 }
 
 .estudioImg{
@@ -177,6 +178,7 @@
     background-color: black;
     display: flex;
     justify-content: center;
+    margin-top: 2rem;
 }
 
 .mapStudio{

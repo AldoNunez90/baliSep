@@ -54,7 +54,7 @@ export default function Conoce() {
                 fill
                 className="conocePhoto2"
               />
-              <div className="overlay">
+              <div className="overlay overlayMobile">
                 <div className="conocePhotoTxtContainer"> 
                 <p className="conocePhotoTxt"><strong>CHEERY BOMB </strong><a
                     href="https://www.instagram.com/bfstoreok/"

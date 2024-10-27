@@ -19,21 +19,33 @@
 }
 
 .bookingSetPalaceContainer{
-    display: flex;
-    flex-direction: column; 
+  display: flex;
+  flex-direction: column; 
+}
+.bookingSetPalaceHero{
+  display: grid;
+  align-items: center;
+  width: 75vw;
+  height: 50vh;
+  grid-template-columns: 1fr 2fr;
+}
+.bookingSetPalacePage{
+  display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 50vw;
+    flex-direction: column;
 }
 
 .setPalaceImgReserveContainer{
     display: grid;
-    grid-template-columns: 50% 50%;
-    width: 50%;
+    grid-template-columns: 50% 50%;;
     position: relative;
+    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
 .setDuoImgReserveContainer{
-    width: 50%;
     position: relative;
     margin-bottom: 2rem;
 }

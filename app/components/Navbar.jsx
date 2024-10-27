@@ -6,15 +6,28 @@ import classNames from "classnames";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+
+
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
+  const [dropOpen, setDropOpen] = useState(false)
 
+  const handleClose = ()=>{
+    if (openMenu != false){
+      setOpenMenu(false)
+    }
+
+    if(dropOpen != false){
+      setDropOpen(false)
+    }
+  }
+  
   const NavItem = ({ href, children }) => {
     const pathname = usePathname();
     const isActive = pathname === href;
     return (
-      <Link href={href}>
-        <p className={classNames("nav-item", { active: isActive })} onClick={()=>setOpenMenu(false)}>
+      <Link href={href} style={{margin: "0 10px"}}>
+        <p className={classNames("nav-item", { active: isActive })} onClick={()=>handleClose()}>
           {children}
         </p>
       </Link>
@@ -59,17 +72,27 @@ export default function Navbar() {
         <NavItem href="/conocebali" className="liNav" >
           Conoce Bali
         </NavItem>
-        <span className="liNavDesktop">
-        <NavItem href="/estudio" className="liNav" >
+        <span className="liNavDesktop" style={{userSelect: "none"}}>
+        <span className="liNav" style={{cursor: "pointer", fontWeight: "500", margin: "0 10px"}} onClick={()=>setDropOpen(!dropOpen)}>
           Estudio
-        </NavItem>
         </span>
-        <span  className="liNavMobile" style={{display: 'none'}}>
+        {dropOpen && 
+        <ul style={{padding: "unset", position: "absolute", zIndex: "100", backgroundColor: "#ffffff", padding: "0 3px", borderRadius: "5px"}}>
+         <span onClick={()=>setDropOpen(!dropOpen)}>
+          <NavItem href={"/estudio/sets"}>Sets</NavItem>
+          </span> 
+          <span onClick={()=>setDropOpen(!dropOpen)}>
+          <NavItem href={"/estudio/equipos"}>Equipos</NavItem>
+          </span>
+        </ul>
+        }
+        </span>
+        <span  className="liNavMobile itemSetMobile" style={{display: 'none'}}>
         <NavItem href="/sets" className="liNav" >
           Sets
         </NavItem>
         </span>
-        <span className="liNavMobile" style={{display: 'none'}}>
+        <span className="liNavMobile itemSetMobile" style={{display: 'none'}}>
         <NavItem href="/equipos" className="liNav" >
           Equipos
         </NavItem>

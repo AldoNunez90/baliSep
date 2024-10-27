@@ -28,7 +28,8 @@ const SecondaryCarousel = ({ images }) => {
 
   return (
     <div>
-      {loading ? (<div className="custom-loader loaderProduccion"></div>) : 
+      
+      {loading ? (<div style={{minHeight: "50vh", display: "flex", alignItems: "center"}}><div className="custom-loader loaderProduccion"></div></div>) : 
       (<Swiper
         spaceBetween={10}
         slidesPerView={1}
@@ -51,7 +52,7 @@ const SecondaryCarousel = ({ images }) => {
             <img
               src={image}
               alt={`Image ${index + 1}`}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "100%", height: "auto"}}
             />
           </SwiperSlide>
         ))}

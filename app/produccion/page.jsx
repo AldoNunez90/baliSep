@@ -18,7 +18,6 @@ export default function Produccion() {
       secondaryCarouselRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
     }
   }, [selectedProduction]);
-console.log(secondaryCarouselRef.current);
 
 
   const images = [

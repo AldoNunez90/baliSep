@@ -16,7 +16,7 @@ const MobileCarousel = ({ images }) => {
       disableOnInteraction: false,
     }}
     breakpoints={{
-      768: { slidesPerView: 3 },
+      768: { slidesPerView: 2 },
       1024: { slidesPerView: 4 },
     }}
     modules={[Autoplay, Navigation]}>

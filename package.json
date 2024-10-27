@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/dropdown": "^2.1.31",
     "classnames": "^2.5.1",
     "cloudinary": "^2.4.0",
     "date-fns": "^3.6.0",
@@ -22,5 +23,8 @@
     "react-fast-marquee": "^1.6.5",
     "react-slick": "^0.30.2",
     "swiper": "^11.1.11"
+  },
+  "devDependencies": {
+    "file-loader": "^6.2.0"
   }
 }
