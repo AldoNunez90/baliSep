@@ -102,3 +102,435 @@
   .smallParagraph{
     font-size: clamp(0.7rem, 1vw, 1rem);
   }
+
+  
+.bookingSetPalaceContainer{
+  display: flex;
+  min-height: 400px;
+  padding: 2vw;
+}
+.reservasIntroContainer{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 2vw 0;
+}
+
+.reservasIntroTitle{
+text-align: center;
+font-weight: 800;
+font-size: xx-large;
+width: 13rem;
+}
+
+
+.reservasIntroTxt{
+text-align: center;
+margin: 2vw;
+font-weight: 500;
+font-size: large;
+}
+
+.reservasIntroSmall{
+font-size: x-small;
+font-weight: 600;
+}
+
+.setPalaceDetailsContent{
+  display: flex;
+  flex-direction: column;
+}
+
+.setPalaceDetails, .bookingCalendarContainer {
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.setPalaceDetails{
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+padding: 2vw;
+}
+
+.summaryTitle{
+font-size: 3vw;
+font-weight: 500;
+}
+
+.summaryDate{
+margin-top: 1vw;
+}
+
+.setPalaceTitle{
+  font-weight: 700;
+}
+.setPalaceImg{
+  margin-left: 4vw;
+}
+
+.setDuoImg{
+width: auto !important;
+height: 16vw !important;
+position: relative !important;
+}
+
+.setDuoImgContainer{
+align-self: center;
+}
+
+.setPalaceAzulImg{
+position: relative !important;
+height: 30vw !important; 
+width: auto !important;
+}
+.setPalaceText{
+  justify-content: center;
+  padding: 1.5vw;
+}
+
+.setPalaceAzulTxt{
+margin-bottom: 1vw;
+}
+.startBookingBtn{
+  padding: 6px;
+  width: 8vw;
+  border-radius: 30px;
+  color: white;
+  background-color: black;
+  font-size: small;
+  border: none;
+  cursor: pointer;
+}
+
+.startBookingBtn:active{
+background-color: #81C784;
+}
+
+.cancelBookingBtn{
+  padding: 5px;
+  width: 8vw;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  font-size: small;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+.cancelBookingBtn:active{
+background-color: rgb(190, 190, 190);
+}
+.confirmBtn{
+padding: 5px;
+width: 12vw;
+border-radius: 30px;
+color: black;
+background-color: white;
+font-size: small;
+margin: 0.5vw;
+cursor: pointer;
+border: unset;
+}
+.confirmBtn:active{
+background-color: rgb(190, 190, 190);
+}
+.setPalaceBtns{
+ display: flex,
+}
+
+.setPalaceSmall{
+  font-size: 0.8vw;
+}
+
+.bookingCalendarContainer{
+  justify-content: center;
+  width: -webkit-fill-available;
+  align-items: center;
+}
+
+.react-calendar{
+  border: none !important;
+  font-weight: 600;
+  font: inherit;
+  font-family: inherit;
+}
+
+.react-calendar__tile--now{
+background-color: rgb(223, 223, 223) !important;
+border-radius: 50px; 
+}
+
+
+.react-calendar__month-view__weekdays{
+  font-family: inherit;
+}
+
+.selectHoursHero{
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  justify-content: space-around;
+}
+
+.selectHoursContainer{
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap !important;
+  justify-content: center;
+}
+
+.selectHours{
+  margin-right: 15px;
+  color: white;
+}
+
+#hours-select{
+  border: none;
+  border-radius: 50px;
+  width: 10vw;
+  height: 2.5vw;
+  display: flex;
+  text-align: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin-left: 15px;
+}
+
+.selectedOption {
+  background-color: white ;
+  color: black;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+  position: relative;
+}
+
+
+
+
+
+.nextBookingBtn{
+  padding: 5px;
+  width: 8vw;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  font-size: small;
+  align-self: center;
+  border: none;
+}
+
+.specialHourBtn{
+  padding: 5px;
+  width: 8vw;
+  border-radius: 30px;
+  color: black;
+  background-color: white;
+  font-size: small;
+  align-self: center;
+  border: none;
+  text-align: center;
+  margin-left: 1.5vw ;
+}
+.hoursBtnContainer{
+  display: flex;  
+  flex-direction: column;
+}
+.options {
+  position: absolute;
+  background-color: gray;
+  z-index: 99;
+  border-radius: 10px;
+  width: 100%;
+  top: 39px;
+}
+
+.option {
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.option:hover {
+  background-color: black;
+}
+
+.hoursBoxHero{
+  color: white;
+}
+
+.hoursBoxContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+.hoursBoxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+}
+
+.hourBoxBtn{
+  width: 100px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 50px;
+  margin: 15px;
+  padding: 6px;
+  text-align: center;
+   }
+  
+.hourBoxesText{
+  margin-left: 20px;
+}
+
+.past-day{
+color: gray !important;
+
+}
+
+.completely-free {
+  color: blue !important;
+}
+.partially-occupied {
+  color: rgb(221, 147, 9) !important;
+}
+
+.completely-occupied {
+  color: gray !important;
+}
+
+.react-calendar__tile:disabled{
+  background-color: unset !important;
+}
+
+.react-calendar__tile:hover{
+  background-color: lightgrey;
+  border-radius: 100px;
+}
+
+.booking-form{
+  width: -webkit-fill-available;
+  height: -webkit-fill-available;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputForm{
+  border: none;
+  border-radius: 50px;
+  width: 20vw;
+  height: 1.5vw;
+  margin: 0.5vw;
+}
+
+.hourBoxBtn.start {
+  background-color: #81C784; /* Color para el botón que es el inicio */
+  color: #fff;
+}
+
+.hourBoxBtn.selected {
+  background-color: #4CAF50; /* Color para la selección */
+  color: #fff;
+}
+
+.hourBoxBtn.intermediate {
+  background-color: #81C784; /* Color para los intermedios */
+}
+
+.hourBoxBtn[disabled] {
+  cursor: not-allowed;
+}
+
+.custom-loader {
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border:8px solid;
+  border-color:#D2D2D2;
+  border-right-color: #646464;
+  animation:s2 1s infinite linear;
+}
+@keyframes s2 {to{transform: rotate(1turn)}}
+
+.dialogHero{
+display: flex;
+background-color: black;
+justify-content: center;
+align-items: center;
+margin-bottom: 5vw;
+}
+
+.dialogContainer{
+  display: flex;
+  width: 75vw;
+  height: 30vw;
+  align-self: center;
+  color: white;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.recervedOk{
+width: 10vw !important;
+height: inherit !important;
+position: relative !important;
+}
+
+.dialogReserveDetails{
+display: flex;
+}
+
+.dialogReserveContent{
+margin: 2vw;
+}
+
+.dialogTitle{
+font-weight: 600;
+font-size: 3vw;
+margin-bottom: 0.5vw;
+}
+
+.dialogSubTitle{
+font-weight: 500;
+font-size: 1vw;
+margin-bottom: 2.5vw;
+}
+.overlayDialog {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad aquí */
+z-index: 999; /* Asegúrate de que esté por encima del contenido */
+}
+
+.specialHours{
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 8vw;
+}

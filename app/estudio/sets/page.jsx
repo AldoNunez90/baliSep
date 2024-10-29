@@ -1,10 +1,16 @@
 'use client'
 import Image from "next/image";
+import { Suspense } from "react";
 export default function Sets() {
+
+    const Loading = ()=>{
+        return <div style={{height: "50vh"}}>Loading...</div>;
+    }
 
     return (
         <>
         <div className="setsContainerHeroDesktop">
+            <Suspense fallback={<Loading />}>
         <section className="setPalaceHeroDesktop">
             {/* Set Palace */}
         <div className="setPalaceContainer">
@@ -22,7 +28,7 @@ export default function Sets() {
             <Image src={"https://res.cloudinary.com/dbohxop49/image/upload/v1725984352/05-setPalace2_krghvg.png"} fill  className="setPalaceImgDetails"/>
         </div>
         </section>
-
+            </Suspense>
         <section className="setDuoHeroDesktop">
         {/* Set DUO */}
         <div className="setDuoTitleContainer">

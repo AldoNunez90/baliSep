@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Calendar from "react-calendar";
-import { useRouter } from "next/navigation";
+import { redirect, useRouter } from "next/navigation";
 import Image from "next/image";
 import "react-calendar/dist/Calendar.css";
 import { format } from "date-fns";
@@ -37,7 +37,12 @@ function SetDuoReserve() {
   const router = useRouter();
   const [authStatus, setAuthStatus] = useState(null);
 
- 
+
+  const handleAcceptClick = () => {
+    // Redirigir a la página deseada, por ejemplo, /reservas
+    console.log("push")
+    router.push('/reservas');
+  };
 const calendarId = true
 
   useEffect(() => {
@@ -338,14 +343,9 @@ const calendarId = true
         </div>
         <p className="finePrint"><small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, beatae et aspernatur autem nisi commodi soluta quia ab voluptates, labore omnis quod ut at eaque dolore dicta earum! Fugiat, quam!</small> </p>
         <button 
-  onClick={() => {
-    // Borra los parámetros de la URL y recarga la página
-    const url = new URL(window.location.href);
-    url.search = '';
-    window.location.href = url.toString();
-  }} 
+  onClick={() => handleAcceptClick()} 
   className="confirmBtn" 
-  style={{ alignSelf: "center" }}
+  style={{ alignSelf: "center", margin: "2vw" }}
 >
   Genial!
 </button>
@@ -574,32 +574,35 @@ const calendarId = true
         ]
       },
     };
-    try {
-      const response = await fetch("/api/createEvent", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(
-          `Error ${response.status}: ${errorData.error || "Desconocido"}`
-        );
-      }
+    setResponseOk('success')
+    // try {
+    //   const response = await fetch("/api/createEvent", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(formData),
+    //   });
 
-      const data = await response.json();
-      if (data.status === "confirmed") {
-        setResponseOk('success')
-      } else {
-        setResponseOk('error')
-      }
-    } 
-    catch (error) {
-      console.error("Error en la solicitud:", error);
-    } 
+
+    //   if (!response.ok) {
+    //     const errorData = await response.json();
+    //     throw new Error(
+    //       `Error ${response.status}: ${errorData.error || "Desconocido"}`
+    //     );
+    //   }
+
+    //   const data = await response.json();
+    //   if (data.status === "confirmed") {
+    //     setResponseOk('success')
+    //   } else {
+    //     setResponseOk('error')
+    //   }
+    // } 
+    // catch (error) {
+    //   console.error("Error en la solicitud:", error);
+    // } 
   };
 
   return (
@@ -608,13 +611,15 @@ const calendarId = true
       <div className="bookingSetPalaceHero">
           <div className="setPalaceDetails">
             <p className="summaryTitle">SET DUO </p>
-            <p className="summaryDate">{screenDate && screenDate}</p>
-            <p className="summaryDate">{hours && hours}</p>
+            <p className="summaryDate">Fecha: {screenDate && screenDate}</p>
+            <p className="summaryDate">Tiempo: {hours && hours}</p>
             <p className="summaryDate">
-              {start && `${start}:00`}
-              {end && ` - ${end}:00`}
+             Desde: {start && ` ${start}:00`} hs
             </p>
-       <button onClick={clearBooking} className="btnStyle"><Link href={"/reservas"}>Cancelar</Link></button>  
+            <p className="summaryDate">
+             Hasta: {end && ` ${end}:00`} hs
+            </p>
+       <button onClick={clearBooking} className="btnStyle btnMobile"><Link href={"/reservas"}>Cancelar</Link></button>  
           </div>
         
 

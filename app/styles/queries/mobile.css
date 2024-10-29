@@ -6,11 +6,82 @@
 
 @media only screen and (max-width: 785px){
 
+    .reservasContainer{
+        min-height: 45vh
+    }
+
+    .hourBoxBtn{
+        width: 90px;
+        margin: 10px;
+    }
+
+    .renderBtn{
+        margin-top: 2vw;
+        display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .finePrint {
+        margin: 1vw;
+    }
+    
+    .dialogContainer{
+        height: unset;
+    }
+
+    .dialogSubTitle{
+        font-size: 2vw;
+    }
+
+    .booking-form form {
+        height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        padding: 0.8rem;
+    }
+
+    .confirmBtn{
+        height: 45%;
+        width: 45%;
+        align-self: center;
+        font-size: clamp(0.7rem, 2vw, 1.5rem);
+    }
+    
+    .inputForm{
+        height: unset;
+        padding: 0.3rem;
+        margin: 0.5vw 0;
+        width: 50%;
+    }
+
+    .bookingCalendarContainer{
+        height: 100%;
+    }
+
+    .bookingSetPalaceContainer{
+        width: 100%;
+    }
+
+
+    .bookingSetPalacePage{
+        width: 60vw;
+    }
+
     .bookingSetPalaceHero{
         grid-template-columns: unset;
         grid-template-rows: 1fr 2fr;
+        height: unset;
+        align-items: unset;
+    }
+    .nextBookingBtn{
+        margin-bottom: 10px;
+        width: unset;
     }
 
+    .setsOverlayTxt{
+        text-align: center;
+    }
     
 
     .warningDesktop{
@@ -507,9 +578,6 @@
         font-size: clamp( 1rem, 1.5vw , 1.5rem);
     }
 
-    .setPalaceImgReserveContainer{
-        width: 95%;
-    }
 
     .btnStyle{
         background-color: black;
@@ -532,16 +600,17 @@
         margin-bottom: 1rem;
     }
 
-    .setDuoImgReserveContainer{
-        width: 95%;
-    }
-
     .formContactComponent{
         width: unset !important;
     }
 
     .imgFormContact iframe {
         width: unset !important;
+    }
+
+    .btnMobile{
+        background-color: white;
+        color: black;
     }
     
 }
